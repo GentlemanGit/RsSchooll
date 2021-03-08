@@ -1,0 +1,111 @@
+body {
+  margin: 0 auto;
+  height: 2508px;
+  max-width: 1440px;
+  background-color: #cccccc;
+}
+.content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.foxImg {
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+  height: 780px;
+}
+header {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+.logoImg {
+  z-index: 2;
+  height: 60px;
+  width: 70px;
+  border-radius: 0px;
+}
+.logoText {
+  z-index: 2;
+  margin-left: 15px;
+  width: 155px;
+  height: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 60px;
+  color: #f7f7f7;
+}
+nav {
+  position: relative;
+}
+ul {
+  top: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+li {
+  margin-left: 60px;
+}
+.blog,
+.contacts {
+  z-index: 2;
+  position: relative;
+  height: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+.blog {
+  width: 50px;
+}
+.contacts {
+  width: 96px;
+}
+.search {
+  z-index: 2;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 0px;
+}
+.buttonSignIn {
+  position: relative;
+  z-index: 2;
+  width: 120px;
+  height: 50px;
+  border: 2px solid #cd6326;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  align-items: center;
+  text-align: center;
+  color: #f7f7f7;
+}
+.buttonSignIn:hover{
+  background: #CD6326;
+}
+.buttonSignIn:active{
+  background: #8F5613;
+}
