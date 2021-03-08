@@ -2,18 +2,12 @@ body {
   margin: 0 auto;
   height: 2508px;
   max-width: 1440px;
-  background-color: #cccccc;
+  background-color: #02160b;
 }
 .content {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
-}
-.foxImg {
-  position: absolute;
-  top: 0px;
-  width: 1440px;
-  height: 780px;
 }
 header {
   z-index: 1;
@@ -72,6 +66,7 @@ li {
   text-decoration: none;
   color: #f7f7f7;
 }
+
 .blog {
   width: 50px;
 }
@@ -102,10 +97,78 @@ li {
   align-items: center;
   text-align: center;
   color: #f7f7f7;
+  outline: none;
 }
-.buttonSignIn:hover{
-  background: #CD6326;
+.buttonSignIn:hover {
+  background: #cd6326;
 }
-.buttonSignIn:active{
+.buttonSignIn:active {
+  background: #8f5613;
+}
+.blog:hover,
+.contacts:hover,
+.search:hover {
+  background: #cd6326;
+  border-radius: 10px;
+}
+.blog:active,
+.contacts:active,
+.search:active {
+  background: #8f5613;
+  border-radius: 10px;
+}
+
+.foxImg {
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+  height: 780px;
+
+}
+h1 {
+  margin-top: 100px;
+  margin-bottom: 0px;
+  width: 200px;
+  height: 72px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: #cd6326;
+}
+.foxText {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  width: 274px;
+  height: 108px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f7f7f7;
+}
+.buttonDonate {
+  margin-top: 50px;
+  width: 160px;
+  height: 60px;
+  background: #cd6326;
+  border-radius: 5px;
+  border: transparent;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #f7f7f7;
+  outline: none;
+}
+.buttonDonate:hover{
+  background: #E39128;
+}
+.buttonDonate:active{
   background: #8F5613;
 }
