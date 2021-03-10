@@ -2,7 +2,6 @@ body {
   margin: 0 auto;
   height: 2508px;
   max-width: 1440px;
-  background-color: #02160b;
 }
 .content {
   position: relative;
@@ -119,11 +118,11 @@ li {
 }
 
 .foxImg {
+  background: #02160b;
   position: absolute;
   top: 0px;
   width: 1440px;
   height: 780px;
-
 }
 h1 {
   margin-top: 100px;
@@ -139,6 +138,7 @@ h1 {
   color: #cd6326;
 }
 .foxText {
+  z-index: 2;
   margin-top: 50px;
   margin-bottom: 0px;
   width: 274px;
@@ -166,9 +166,114 @@ h1 {
   color: #f7f7f7;
   outline: none;
 }
-.buttonDonate:hover{
-  background: #E39128;
+.buttonDonate:hover {
+  background: #e39128;
 }
-.buttonDonate:active{
-  background: #8F5613;
+.buttonDonate:active {
+  background: #8f5613;
+}
+main {
+  padding-top: 240px;
+  width: 1440px;
+  height: 1368px;
+  background: #cccccc;
+  display: flex;
+  flex-wrap: wrap;
+}
+h2 {
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  width: 332px;
+  height: 72px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #333333;
+}
+.sh2 {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 332px;
+  height: 36px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
+.slider {
+  margin-top: 120px;
+  display: flex;
+}
+.slideLeft:hover,
+.slideRight:hover{
+ width: 5%;
+ height: 5%;
+}
+.slideLeft:active,
+.slideRight:active{
+  width: 30px;
+  height: 70px;
+}
+.slideLeft,
+.slideRight {
+  width: 30px;
+  height: 70px;
+  border-radius: 0px;
+  padding-top: 147px;
+}
+.slideLeft,
+.deer,
+.squirell,
+.bird {
+  margin-right: 60px;
+}
+.deer {
+  background: url(assets/deer.jpg);
+}
+.squirell{
+  background: url(assets/sqirell.jpg);
+}
+.bird{
+  background: url(assets/bird.jpg); 
+}
+.deer,
+.squirell,
+.bird {
+  width: 300px;
+  height: 360px;
+  border-radius: 0px;
+}
+
+h4 {
+  margin: 247px auto 0px;
+  width: 85px;
+  height: 36px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #f7f7f7;
+}
+.imgText{
+  margin: 10px auto;
+  width: 190px;
+height: 27px;
+font-family:"Open Sans", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 27px;
+text-align: center;
+color: #F7F7F7;
 }
