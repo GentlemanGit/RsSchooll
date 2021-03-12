@@ -108,13 +108,13 @@ nav {
 }
 li:hover {
 border-radius: 10px;
-border: 1px solid #cd6326;
+background-color:  #cd6326;
   cursor: pointer;
 
 }
 li:active{
   cursor: pointer;
-  border: 2px solid #8f5613;
+  background-color: #8f5613;
 }
 
 .foxImg {
@@ -174,8 +174,12 @@ h1 {
   cursor: pointer;
   background: #8f5613;
 }
+.bgHeaderSurvival{
+  background-color: #02160b;
+  height: 780px;
+  width: 100%;
+}
 main {
-  padding-top: 240px;
   width: 1440px;
   height: 1368px;
   background: #cccccc;
@@ -249,6 +253,7 @@ h2 {
 .bird {
   background: url(assets/bird.jpg);
 }
+
 .deer,
 .squirell,
 .bird {
@@ -325,6 +330,7 @@ form {
   color: #666666;
 }
 .inputButton {
+  cursor: pointer;
   width: 120px;
   height: 61px;
   background: #cd6326;
@@ -415,4 +421,7 @@ footer {
   list-style-type: none;
   display: flex;
   align-items: center;
+}
+.link{
+ display: block;
 }
