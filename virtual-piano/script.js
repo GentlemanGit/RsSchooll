@@ -6,45 +6,67 @@ function playAudio(file) {
   audio.play(); //проигрываем аудиофайл
 }
 
+/*Работа с мышью*/
 const DOC = document.querySelectorAll(".piano-key"); //Записываем в константу все элементы с классом ".piano-key"
 const PIANO = document.getElementById("piano"); //Записываем в константу элемент с id "piano"
 
 /*Функция старта, запускает действия с полученной клавишей */
 const start = (key) => {
   key.target.classList.add("active"); //Добавляем клавише класс "active"
-  const note = key.target.dataset.note;//получаем ноту из data нажатой клавиши
-  const file = `assets/audio/${note}.mp3`;//получаем аудиофайл по ноте
-  playAudio(file);//по полученой ноте воспроизводим аудиофайл
+  const note = key.target.dataset.note; //получаем ноту из data нажатой клавиши
+  const file = `assets/audio/${note}.mp3`; //получаем аудиофайл по ноте
+  playAudio(file); //по полученой ноте воспроизводим аудиофайл
 };
 
 /*Функция остановки, остановливает действия с полученной клавишей */
 const stop = (key) => {
-  key.target.classList.remove("active");//убирает у клавиши класс "active"
+  key.target.classList.remove("active"); //убирает у клавиши класс "active"
 };
 
 /*Функция запуска по мышке, запускает действия с полученной клавишей*/
 const startMauseElem = (key) => {
-  if (key.target.classList.contains("piano-key"))//если полученный элемент действительно клавиша
-   {  const note = key.target.dataset.note;//получаем ноту из data нажатой клавиши
-    const file = `assets/audio/${note}.mp3`;//получаем аудиофайл по ноте
-    playAudio(file);//по полученой ноте воспроизводим аудиофайл
-    key.target.classList.add("active");//Добавляем клавише класс "active"
+  if (key.target.classList.contains("piano-key")) {
+    //если полученный элемент действительно клавиша
+    const note = key.target.dataset.note; //получаем ноту из data нажатой клавиши
+    const file = `assets/audio/${note}.mp3`; //получаем аудиофайл по ноте
+    playAudio(file); //по полученой ноте воспроизводим аудиофайл
+    key.target.classList.add("active"); //Добавляем клавише класс "active"
   }
   /*проходим все наши клавиши в html*/
   DOC.forEach((elem) => {
-    elem.addEventListener("mouseover", start);// добавляем слушателя находящейся над клавишей пианино мыши
-    elem.addEventListener("mouseout", stop);// добавляем слушателя находящейся  НЕ над клавишей пианино мыши
+    elem.addEventListener("mouseover", start); // добавляем слушателя находящейся над клавишей пианино мыши
+    elem.addEventListener("mouseout", stop); // добавляем слушателя находящейся  НЕ над клавишей пианино мыши
   });
 };
 /*Функция остановки по мышке, остановливает действия с полученной клавишей*/
 const stopMauseElem = () => {
-    /*проходим все наши клавиши в html*/
+  /*проходим все наши клавиши в html*/
   DOC.forEach((elem) => {
-    elem.classList.remove("active");//убирает у клавиши класс "active"
-    elem.removeEventListener("mouseover", start);// убираем слушателя находящейся над клавишей пианино мыши
-    elem.removeEventListener("mouseout", stop);// добавляем слушателя находящейся  НЕ над клавишей пианино мыши
+    elem.classList.remove("active"); //убирает у клавиши класс "active"
+    elem.removeEventListener("mouseover", start); // убираем слушателя находящейся над клавишей пианино мыши
+    elem.removeEventListener("mouseout", stop); // добавляем слушателя находящейся  НЕ над клавишей пианино мыши
   });
 };
 
-PIANO.addEventListener("mousedown", startMauseElem);// добавляем слушателя нажатой кнопки мыши
-PIANO.addEventListener("mouseup", stopMauseElem);// добавляем слушателя отпущенной кнопки мыши
+PIANO.addEventListener("mousedown", startMauseElem); // добавляем слушателя нажатой кнопки мыши
+document.querySelector("body").addEventListener("mouseup", stopMauseElem); // добавляем слушателя отпущенной кнопки мыши в любом месте документа
+
+/*Работа с клавиатурой*/
+window.addEventListener("keydown", (event) => {
+  if (event.repeat) return;
+  DOC.forEach((keyBoard) => {
+    if (event.code.slice(3, 4) === keyBoard.dataset.letter) {
+      keyBoard.classList.add("active");
+      const note = keyBoard.dataset.note; //получаем ноту из data нажатой клавиши
+      const file = `assets/audio/${note}.mp3`; //получаем аудиофайл по ноте
+      playAudio(file); //по полученой ноте воспроизводим аудиофайл
+    } else return;
+  });
+});
+window.addEventListener("keyup", (event) => {
+  DOC.forEach((keyBoard) => {
+    if (event.code.slice(3, 4) === keyBoard.dataset.letter)
+      keyBoard.classList.remove("active");
+  });
+});
+/*Fullscreen*/
