@@ -52,8 +52,10 @@ PIANO.addEventListener("mousedown", startMauseElem); // добавляем сл�
 document.querySelector("body").addEventListener("mouseup", stopMauseElem); // добавляем слушателя отпущенной кнопки мыши в любом месте документа
 
 /*Работа с клавиатурой*/
+/*при нажатии клавиши*/
 window.addEventListener("keydown", (event) => {
-  if (event.repeat) return;
+  if (event.repeat) return; //отключаем повторное нажатие при зажатии клавиши
+  /*пробегаем всю клаву*/
   DOC.forEach((keyBoard) => {
     if (event.code.slice(3, 4) === keyBoard.dataset.letter) {
       keyBoard.classList.add("active");
@@ -63,6 +65,7 @@ window.addEventListener("keydown", (event) => {
     } else return;
   });
 });
+/*при отпускании клавиши*/
 window.addEventListener("keyup", (event) => {
   DOC.forEach((keyBoard) => {
     if (event.code.slice(3, 4) === keyBoard.dataset.letter)
@@ -70,3 +73,18 @@ window.addEventListener("keyup", (event) => {
   });
 });
 /*Fullscreen*/
+document.addEventListener(
+  "click",
+  (event) => {
+    /* Проверяем кнопку*/
+    if (!event.target.classList.contains("fullscreen")) return;
+    /* Если уже в полноэкранном режиме, перейти в оконный*/
+    /* Иначе, снова перейти в полноэкранный*/
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } else {
+      document.documentElement.requestFullscreen();
+    }
+  },
+  false
+);
