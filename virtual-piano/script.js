@@ -73,11 +73,9 @@ window.addEventListener("keyup", (event) => {
   });
 });
 /*Fullscreen*/
-document.addEventListener(
+document.getElementById("FS").addEventListener(
   "click",
-  (event) => {
-    /* Проверяем кнопку*/
-    if (!event.target.classList.contains("fullscreen")) return;
+  () => {
     /* Если уже в полноэкранном режиме, перейти в оконный*/
     /* Иначе, снова перейти в полноэкранный*/
     if (document.fullscreenElement) {
@@ -85,6 +83,4 @@ document.addEventListener(
     } else {
       document.documentElement.requestFullscreen();
     }
-  },
-  false
-);
+  });
