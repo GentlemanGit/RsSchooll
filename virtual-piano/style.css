@@ -128,7 +128,7 @@ body {
 .piano-key.active,
 .piano-key.sharp.active {
 	transform: scale(0.96);
-	background-color: #00c9b7;;
+	background-color:#ddbf84;
 }
 
 
