@@ -168,8 +168,7 @@ body {
 	border-top: 0;
 }
 
-.piano-key.sharp::before,
-.piano-key.sharp::after {
+.piano-key.sharp::before{
 	bottom: 175px;
 	left: 7px;
 }
@@ -186,12 +185,9 @@ body {
 .piano-key-remove-mouse:active::before {
 	color: #a2abb3;
 }
-
-.piano-key-active-pseudo:hover::after,
-.piano-key-active-pseudo:hover::before,
-.piano-key-active::after,
+.piano-key:hover::before,
 .piano-key-active::before {
-	color: #00b4a4;
+color:#ddbf84;
 }
 .fullscreen {
 	position: fixed;
