@@ -90,8 +90,8 @@ body {
 	position: relative;
 	width: 80px;
 	height: 270px;
-	background-color: rgba(255, 255, 255, 0.85);
-	border: 4px solid #313940;
+	background-color:#e5dac4;
+	margin: 4px;
 	border-radius: 0px 0px 12px 12px;
 	transition: 0.3s;
 	cursor: pointer;
@@ -112,13 +112,14 @@ body {
 .piano-key.sharp {
 	width: 54px;
 	height: 170px;
-	background-color: #313940;
+	background-color: #4e4646;
 	border: 0;
 	border-radius: 0px 0px 9px 9px;
 	top: 0;
 	z-index: 3;
 	pointer-events: auto;
 	transform-origin: center top;
+	margin: 0px;
 }
 
 .piano-key.active,
@@ -136,9 +137,8 @@ body {
 }
 
 
-.piano-key::before,
-.piano-key::after {
-	content: attr(data-note);
+.piano-key::before{
+
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -149,16 +149,17 @@ body {
 	bottom: -45px;
 	left: 20px;
 	transition: 0.3s;
+	pointer-events: none;
 }
 
-.piano-key::after {
-	display: none;
-	content: attr(data-letter);
+.piano-key::before
+{
+	display: block;
+	content: attr(data-note2);
 }
+
 .piano-key:hover::before,
-.piano-key:hover::after {
-	color: #d7dfe6;
-}
+
 
 .sharp:active {
 	border-top: 0;
@@ -178,7 +179,7 @@ body {
 .piano-key-letter::before {
 	content: attr(data-letter);
 }
-/*
+
 .piano-key-remove-mouse:active::before {
 	color: #a2abb3;
 }
@@ -188,7 +189,7 @@ body {
 .piano-key-active::after,
 .piano-key-active::before {
 	color: #00b4a4;
-}*/
+}
 .fullscreen {
 	position: fixed;
 	top: 120px;

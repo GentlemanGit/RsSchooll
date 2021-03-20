@@ -73,14 +73,35 @@ window.addEventListener("keyup", (event) => {
   });
 });
 /*Fullscreen*/
-document.getElementById("FS").addEventListener(
-  "click",
-  () => {
-    /* Если уже в полноэкранном режиме, перейти в оконный*/
-    /* Иначе, снова перейти в полноэкранный*/
-    if (document.fullscreenElement) {
-      document.exitFullscreen();
-    } else {
-      document.documentElement.requestFullscreen();
-    }
-  });
+document.getElementById("FS").addEventListener("click", () => {
+  /* Если уже в полноэкранном режиме, перейти в оконный*/
+  /* Иначе, снова перейти в полноэкранный*/
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+  } else {
+    document.documentElement.requestFullscreen();
+  }
+});
+/*Переключение клавиш*/
+const btnN = document.querySelector(".btn-notes");
+const btnL = document.querySelector(".btn-letters");
+DOC.forEach((elem) => {
+  elem.setAttribute("data-note2", elem.dataset.note);
+});
+
+btnN.addEventListener("click", () => {
+  btnN.classList.add("btn-active");
+  btnL.classList.remove("btn-active");
+  DOC.forEach((elem) => {
+    elem.dataset.note2 = elem.dataset.note;
+    });
+
+});
+btnL.addEventListener("click", () => {
+  DOC.forEach((elem) => {
+    elem.dataset.note2 = elem.dataset.letter;
+    });
+  btnL.classList.add("btn-active");
+  btnN.classList.remove("btn-active");
+
+});
