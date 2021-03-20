@@ -99,6 +99,9 @@ body {
 .piano-key:hover {
 	background-color: #fff;
 }
+.piano-key.sharp:hover{
+	background-color: #413a3a;
+}
 .keys-sharp {
 	position: absolute;
 	top: 0;
