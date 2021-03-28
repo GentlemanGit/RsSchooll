@@ -30,13 +30,13 @@ header {
   color: #000000;
 }
 
-a {
+li a {
   text-decoration: none;
 }
 
-a:link,
-a:active,
-a:visited {
+li a:link,
+li a:active,
+li a:visited {
   color: #000000;
 }
 
@@ -46,12 +46,14 @@ a:visited {
 }
 
 .logo {
+  margin: 0;
   background: url(../../assets/logo.svg);
   height: 57px;
   width: 112px;
 }
 
 .background-section1 {
+  background-position: center;
   top: 0;
   background-color: rgb(102, 200, 251);
   background-image: url(../../assets/background-panda.png);
@@ -102,7 +104,6 @@ button {
 }
 
 .section2 {
-  display: flex;
   justify-content: center;
 }
 
@@ -113,6 +114,78 @@ button {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
+  text-align: center;
+  color: #000000;
+}
+
+.section2__slider {
+  margin: 30px auto 0px;
+  display: flex;
+  justify-content: center;
+  background: url(../../assets/background-slider.png);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eagle {
+  z-index: 0;
+  height: 350px;
+  width: 250px;
+}
+
+.tiger {
+  z-index: 1;
+  height: 400px;
+  width: 300px;
+}
+
+.panda {
+  z-index: 2;
+  height: 450px;
+  width: 350px;
+}
+
+.monkey {
+  z-index: 1;
+  height: 400px;
+  width: 300px;
+}
+
+.elephant {
+  z-index: 0;
+  height: 350px;
+  width: 250px;
+}
+
+.eagle,
+.tiger,
+.panda,
+.monkey,
+.elephant {
+  position: relative;
+  margin: 0 -20px 0 -20px;
+}
+
+.section2__slider-img {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0px;
+}
+
+.section2__text {
+  margin: 30px auto 100px;
+  width: 933px;
+  height: 126px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
   text-align: center;
   color: #000000;
 }
