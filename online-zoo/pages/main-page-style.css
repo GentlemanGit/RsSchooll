@@ -55,7 +55,7 @@
     background-position: center;
     top: 0;
     background-color: rgb(102, 200, 251);
-    background-image: url(../../assets/background-panda.png);
+    background-image: url(../assets/background-panda.png);
     height: 700px;
     width: 100%;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@
   }
   
   .button__img-play {
-    background: url(../../assets/button-image-play.svg);
+    background: url(../assets/button-image-play.svg);
     width: 14px;
     height: 15px;
     margin: 0px 6px;
@@ -124,7 +124,7 @@
     margin: 30px auto 0px;
     display: flex;
     justify-content: center;
-    background: url(../../assets/background-slider.png);
+    background: url(../assets/background-slider.png);
     height: 550px;
     background-repeat: no-repeat;
     background-position: center;
@@ -230,35 +230,35 @@
   }
   
   .zoo-panda {
-    background-image: url(../../assets/zoo-panda.png);
+    background-image: url(../assets/zoo-panda.png);
   }
   
   .zoo-aligator {
-    background-image: url(../../assets/zoo-aligator.png);
+    background-image: url(../assets/zoo-aligator.png);
   }
   
   .zoo-gorila {
-    background-image: url(../../assets/zoo-gorila.png);
+    background-image: url(../assets/zoo-gorila.png);
   }
   
   .zoo-elephant {
-    background-image: url(../../assets/zoo-elephant.png);
+    background-image: url(../assets/zoo-elephant.png);
   }
   
   .zoo-polar-bear {
-    background-image: url(../../assets/zoo-polar-bear.png);
+    background-image: url(../assets/zoo-polar-bear.png);
   }
   
   .zoo-eagle {
-    background-image: url(../../assets/zoo-eagle.png);
+    background-image: url(../assets/zoo-eagle.png);
   }
   
   .zoo-owl {
-    background-image: url(../../assets/zoo-owl.png);
+    background-image: url(../assets/zoo-owl.png);
   }
   
   .zoo-penguin {
-    background-image: url(../../assets/zoo-penguin.png);
+    background-image: url(../assets/zoo-penguin.png);
   }
   
   .slider-img__img-text {
@@ -277,7 +277,7 @@
     position: relative;
     display: flex;
     margin-top: 48px;
-    background-image: url(../../assets/Arrow.svg);
+    background-image: url(../assets/Arrow.svg);
     height: 64px;
     width: 64px;
   }
@@ -299,7 +299,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../assets/Arrows.svg);
+    background-image: url(../assets/Arrows.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -379,7 +379,7 @@
   }
   
   footer {
-    background-image: url(../../assets/background-footer.png);
+    background-image: url(../assets/background-footer.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 342px;
