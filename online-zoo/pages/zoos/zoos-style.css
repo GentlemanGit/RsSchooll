@@ -15,6 +15,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
+  width: 1160px;
 }
 
 .nav__ul {
@@ -168,6 +169,120 @@ aside {
   visibility: visible;
 }
 
+.content {
+  width: 1160px;
+  padding-top: 80px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.content__video {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-video {
+  width: 1160px;
+  height: 653px;
+}
+
+.small-video {
+  margin-top: 20px;
+  width: 275px;
+  height: 155px;
+}
+
+.content__text {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+}
+
+.main-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 1160px;
+  background-color: #A7E1FF;
+  padding-right: 156px;
+}
+
+.sub-text {
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-text1 {
+  margin-right: 20px;
+}
+
+details {
+  margin-top: 20px;
+  width: 530px;
+  padding: 8px 20px;
+  background-color: #A7E1FF;
+  text-align: left;
+}
+
+details[open] {
+  height: 142px;
+}
+
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary::after {
+  content: url(../../assets/zoos-arow-open.svg);
+  cursor: pointer;
+}
+
+details[open] summary::after {
+  cursor: pointer;
+  padding-top: 50px;
+  content: url(../../assets/zoos-arow-close.svg);
+}
+
+details[open] .summary__text {
+  margin-top: -50px;
+}
+
+.details__text {
+  margin-top: -50px;
+  width: 470px;
+}
+
+summary {
+  outline: none;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 footer {
   background-image: url(../../assets/background-footer.png);
   background-repeat: no-repeat;
@@ -188,6 +303,7 @@ footer {
 
 .footer__content {
   margin-top: 70px;
+  width: 1160px;
 }
 
 .nav__ul {
