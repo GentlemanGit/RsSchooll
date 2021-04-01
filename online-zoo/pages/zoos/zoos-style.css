@@ -155,15 +155,6 @@ aside {
   visibility: visible;
 }
 
-.alligator img {
-  pointer-events: none;
-  border: 4px solid #70CB0E;
-}
-
-.alligator .tooltiptext {
-  visibility: visible;
-}
-
 .content {
   max-width: 1160px;
   padding-top: 80px;
