@@ -15,6 +15,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
+  width: 1160px;
 }
 
 .nav__ul {
@@ -259,6 +260,7 @@ footer {
 
 .footer__content {
   margin-top: 70px;
+  width: 1160px;
 }
 
 .nav__ul {
