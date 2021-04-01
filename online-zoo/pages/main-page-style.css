@@ -15,6 +15,7 @@
       height: 80px;
       display: flex;
       align-items: center;
+      width: 1160px;
     }
     
     .nav__ul {
@@ -89,6 +90,10 @@
     .section1__button {
       margin-top: 50px;
       width: 233px;
+    }
+    
+    .section1 {
+      width: 1160px;
     }
     
     .button__img-play {
@@ -393,6 +398,7 @@
     
     .footer__content {
       margin-top: 70px;
+      width: 1160px;
     }
     
     .nav__ul {
