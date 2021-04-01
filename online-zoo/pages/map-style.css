@@ -1,10 +1,5 @@
 .centre {
   margin: 0 auto;
-  max-width: 1920px;
-}
-
-.indent {
-  margin: 0 19.7% 0 19.7%;
 }
 
 h1 {
@@ -15,7 +10,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
-  width: 1160px;
+  max-width: 1160px;
 }
 
 .nav__ul {
@@ -80,7 +75,7 @@ main {
   display: flex;
   background: url(../assets/map.svg);
   height: 745px;
-  width: 1160px;
+  max-width: 1160px;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 100px;
@@ -260,7 +255,7 @@ footer {
 
 .footer__content {
   margin-top: 70px;
-  width: 1160px;
+  max-width: 1160px;
 }
 
 .nav__ul {

@@ -1,10 +1,5 @@
     .centre {
       margin: 0 auto;
-      max-width: 1920px;
-    }
-    
-    .indent {
-      margin: 0 19.7% 0 19.7%;
     }
     
     h1 {
@@ -15,7 +10,7 @@
       height: 80px;
       display: flex;
       align-items: center;
-      width: 1160px;
+      max-width: 1160px;
     }
     
     .nav__ul {
@@ -93,7 +88,7 @@
     }
     
     .section1 {
-      width: 1160px;
+      max-width: 1160px;
     }
     
     .button__img-play {
@@ -202,6 +197,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 1160px;
     }
     
     .section3__slider-img,
@@ -398,7 +394,7 @@
     
     .footer__content {
       margin-top: 70px;
-      width: 1160px;
+      max-width: 1160px;
     }
     
     .nav__ul {
