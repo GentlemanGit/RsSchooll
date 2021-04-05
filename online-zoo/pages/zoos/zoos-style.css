@@ -18,6 +18,10 @@ header {
   align-items: center;
 }
 
+.logo {
+  margin-right: 22px;
+}
+
 .nav__ul li {
   margin-right: 35px;
   font-family: 'Roboto', sans-serif;
@@ -211,7 +215,7 @@ h2 {
   padding: 20px;
   width: 1160px;
   background-color: #A7E1FF;
-  padding-right: 156px;
+  padding-right: 180px;
 }
 
 .sub-text {
@@ -233,7 +237,7 @@ details {
 }
 
 details[open] {
-  height: 142px;
+  height: 128px;
 }
 
 summary::-webkit-details-marker {
@@ -247,12 +251,12 @@ summary::after {
 
 details[open] summary::after {
   cursor: pointer;
-  padding-top: 50px;
+  padding-top: 40px;
   content: url(../../assets/zoos-arow-close.svg);
 }
 
 details[open] .summary__text {
-  margin-top: -50px;
+  margin-top: -40px;
 }
 
 .details__text {
@@ -299,10 +303,13 @@ footer {
 }
 
 .footer__button {
+  margin-right: 100px;
   padding: 15px 30px 15px;
 }
 
 .ul__ul {
+  margin-top: 10px;
+  margin-right: 50px;
   align-items: center;
 }
 
@@ -317,7 +324,7 @@ footer {
 .ul__link {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .ul__link li {
@@ -330,7 +337,7 @@ footer .nav__ul li {
 }
 
 .content__lvl2 {
-  margin-top: 70px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   vertical-align: bottom;
@@ -349,7 +356,7 @@ footer .nav__ul li {
 }
 
 .copyrate {
-  margin-right: 6.25%;
+  margin-right: 11%;
 }
 
 a button:hover,
