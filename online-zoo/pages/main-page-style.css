@@ -419,6 +419,7 @@
     }
     
     .ul__ul {
+      margin-top: 10px;
       margin-right: 50px;
       align-items: center;
     }
@@ -447,7 +448,7 @@
     }
     
     .content__lvl2 {
-      margin-top: 65px;
+      margin-top: 60px;
       display: flex;
       justify-content: space-between;
       vertical-align: bottom;
