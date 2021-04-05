@@ -18,6 +18,10 @@ header {
   align-items: center;
 }
 
+.logo {
+  margin-right: 22px;
+}
+
 .nav__ul li {
   margin-right: 35px;
   font-family: 'Roboto', sans-serif;
@@ -131,7 +135,7 @@ main {
 }
 
 .gorilla {
-  padding-left: 103px;
+  padding-left: 90px;
   padding-top: 505px;
 }
 
@@ -158,7 +162,7 @@ main {
 }
 
 .drc {
-  width: 31px;
+  width: 50px;
   padding-left: 60px;
   padding-top: 523px;
 }
@@ -265,10 +269,13 @@ footer {
 }
 
 .footer__button {
+  margin-right: 100px;
   padding: 15px 30px 15px;
 }
 
 .ul__ul {
+  margin-top: 10px;
+  margin-right: 50px;
   align-items: center;
 }
 
@@ -283,7 +290,7 @@ footer {
 .ul__link {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .ul__link li {
@@ -296,7 +303,7 @@ footer .nav__ul li {
 }
 
 .content__lvl2 {
-  margin-top: 70px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   vertical-align: bottom;
@@ -315,7 +322,7 @@ footer .nav__ul li {
 }
 
 .copyrate {
-  margin-right: 6.25%;
+  margin-right: 11%;
 }
 
 .map-button button:hover,
