@@ -9,13 +9,41 @@
 </head>
 
 <body>
-  <img src="../assets/error-404.svg" alt="error-404">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <figure>
+    <img src="../assets/error-404.svg" alt="error-404">
+    <figcaption>
+      <a href="main-page.html">Go back and try a different link</a>
+    </figcaption>
+  </figure>
+
   <style>
-    img {
+    figure {
       display: flex;
       justify-content: center;
       margin: 10% auto;
       margin-bottom: 0;
+      align-items: flex-end;
+    }
+    
+    figcaption {
+      position: absolute;
+      font-family: 'Bebas Neue', cursive;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+    }
+    
+    a {
+      color: #59C3FB;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: #0ba9fd;
     }
   </style>
 </body>
