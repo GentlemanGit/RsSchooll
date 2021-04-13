@@ -24,7 +24,7 @@ header {
 
 .nav__ul li {
   margin-right: 35px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -43,19 +43,19 @@ li a:visited {
 }
 
 .zoos {
-  text-shadow: #70CB0E 0px 0px 2px;
+  text-shadow: #70cb0e 0px 0px 2px;
   pointer-events: none;
 }
 
 button {
-  background: #70CB0E;
+  background: #70cb0e;
   border: 0;
   border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 60px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -72,11 +72,29 @@ main {
 }
 
 aside {
+  margin-top: 207px;
+  z-index: 1;
+  position: fixed;
+}
+
+.aside-close {
+  height: 45px;
+  width: 45px;
+  background: url(../../assets/Arrow-Slider.svg);
+  margin-left: 20px;
+  display: none;
+}
+
+.aside-open {
   background: url(../../assets/zoos-bg-toolbar.svg);
   width: 111px;
   height: 380px;
-  margin-top: 207px;
-  position: fixed;
+}
+
+.aside-close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .aside-content {
@@ -93,7 +111,7 @@ aside {
   cursor: pointer;
   height: 64px;
   width: 64px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -102,10 +120,10 @@ aside {
   cursor: pointer;
   height: 64px;
   width: 64px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 50%;
   box-sizing: border-box;
-  background-color: #70CB0E;
+  background-color: #70cb0e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +147,7 @@ aside {
   background: url(../../assets/tooltipe.svg);
   background-repeat: no-repeat;
   background-position: right;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -152,7 +170,7 @@ aside {
 
 .feed:hover,
 .tooltip:hover img {
-  border: 4px solid #70CB0E;
+  border: 4px solid #70cb0e;
 }
 
 .tooltip:hover .tooltiptext {
@@ -165,7 +183,7 @@ aside {
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -199,7 +217,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -214,7 +232,7 @@ h2 {
   justify-content: space-between;
   padding: 20px;
   width: 1160px;
-  background-color: #A7E1FF;
+  background-color: #a7e1ff;
   padding-right: 180px;
 }
 
@@ -232,7 +250,7 @@ details {
   margin-top: 20px;
   width: 530px;
   padding: 8px 20px;
-  background-color: #A7E1FF;
+  background-color: #a7e1ff;
   text-align: left;
 }
 
@@ -241,7 +259,7 @@ details[open] {
 }
 
 summary::-webkit-details-marker {
-  display: none
+  display: none;
 }
 
 summary::after {
@@ -284,7 +302,7 @@ footer {
 }
 
 .footer__bg {
-  background-color: #DFF5B0;
+  background-color: #dff5b0;
   height: 270px;
   width: 100%;
   bottom: 0px;
@@ -341,7 +359,7 @@ footer .nav__ul li {
   display: flex;
   justify-content: space-between;
   vertical-align: bottom;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -373,5 +391,14 @@ a button:hover,
 }
 
 a:hover {
-  text-shadow: #70CB0E 0px 0px 2px;
+  text-shadow: #70cb0e 0px 0px 2px;
+}
+
+@media screen and (max-width: 1600px) {
+  .aside-open {
+    display: none;
+  }
+  .aside-close {
+    display: block;
+  }
 }
