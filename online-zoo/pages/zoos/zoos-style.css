@@ -13,7 +13,7 @@ header {
   max-width: 1160px;
 }
 
-.nav__ul {
+.nav__header {
   display: flex;
   align-items: center;
 }
@@ -22,7 +22,7 @@ header {
   margin-right: 22px;
 }
 
-.nav__ul li {
+.nav__header li {
   margin-right: 35px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -40,6 +40,9 @@ li a:link,
 li a:active,
 li a:visited {
   color: #000000;
+}
+.about {
+  margin-left: 22px;
 }
 
 .zoos {
@@ -65,6 +68,9 @@ button {
 
 h1 {
   display: none;
+}
+.nav__header :last-child {
+  margin-right: 0;
 }
 
 main {
@@ -198,7 +204,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .main-video {
@@ -208,8 +214,12 @@ h2 {
 
 .small-video {
   margin-top: 20px;
+  margin-right: 20px;
   width: 275px;
   height: 155px;
+}
+.small-video:last-child {
+  margin-right: 0;
 }
 
 .content__text {
@@ -231,15 +241,26 @@ h2 {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  padding-bottom: 10px;
   width: 1160px;
   background-color: #a7e1ff;
-  padding-right: 180px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.main-text div {
+  width: 445px;
+  margin-bottom: 10px;
+}
+
+.main-text div:last-child {
+  margin-right: 85px;
 }
 
 .sub-text {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .sub-text1 {
@@ -252,6 +273,7 @@ details {
   padding: 8px 20px;
   background-color: #a7e1ff;
   text-align: left;
+  height: 44px;
 }
 
 details[open] {
@@ -294,45 +316,54 @@ summary {
 footer {
   background-image: url(../../assets/background-footer.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   height: 342px;
   width: 100%;
-  bottom: 0;
-  position: relative;
+  position: absolute;
 }
 
 .footer__bg {
   background-color: #dff5b0;
   height: 270px;
   width: 100%;
-  bottom: 0px;
+  bottom: 0;
   position: absolute;
 }
 
 .footer__content {
   margin-top: 70px;
   max-width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.nav__ul {
+.nav__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
 }
 
 .footer__button {
-  margin-right: 100px;
+  margin-left: 60px;
   padding: 15px 30px 15px;
 }
 
-.ul__ul {
-  margin-top: 10px;
-  margin-right: 50px;
+.footer__ul {
+  margin-top: 5px;
+  margin-left: 120px;
   align-items: center;
 }
 
 .ul1 {
-  margin-left: 3.65%;
+  margin-left: 160px;
 }
 
 .ul__li1 {
@@ -340,9 +371,10 @@ footer {
 }
 
 .ul__link {
+  margin-left: 109px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .ul__link li {
@@ -350,14 +382,13 @@ footer {
   margin-right: 0;
 }
 
-footer .nav__ul li {
+footer .footer__ul li {
   margin-right: 0;
 }
 
 .content__lvl2 {
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
   vertical-align: bottom;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -365,18 +396,17 @@ footer .nav__ul li {
   font-size: 18px;
   line-height: 21px;
   align-items: flex-end;
-}
-
-.content__lvl2 ul {
-  display: flex;
   justify-content: space-between;
-  width: 295px;
 }
-
+.footer__text {
+  margin-top: 90px;
+}
 .copyrate {
-  margin-right: 11%;
+  margin-right: 180px;
 }
-
+.logo-no-int {
+  margin-right: 55px;
+}
 a button:hover,
 .ul__link img:hover,
 .logo:hover {
@@ -394,11 +424,95 @@ a:hover {
   text-shadow: #70cb0e 0px 0px 2px;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1589px) {
   .aside-open {
     display: none;
   }
   .aside-close {
     display: block;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .about {
+    margin-left: 15px;
+  }
+  header,
+  .content__text,
+  .content {
+    max-width: 600px;
+  }
+
+  details {
+    width: 560px;
+  }
+  .main-text {
+    width: 560px;
+  }
+  .content__video {
+    justify-content: space-between;
+  }
+  .main-video {
+    height: 338px;
+    width: 93.75vw;
+  }
+  .small-video {
+    height: 167px;
+    width: 290px;
+    margin-right: 0;
+  }
+
+  .footer__content {
+    max-width: 600px;
+  }
+  footer {
+    height: 432px;
+  }
+
+  .footer__bg {
+    height: 360px;
+  }
+  .footer-order__logo-no-int {
+    order: 2;
+  }
+  .footer-order__button {
+    order: 3;
+  }
+  .footer__text {
+    order: 4;
+  }
+  .copyrate {
+    order: 5;
+  }
+  .footer__ul {
+    margin-top: 12px;
+    margin-left: 0;
+  }
+  .ul1 {
+    margin-right: 30px;
+    margin-left: 0;
+  }
+  .ul__link {
+    margin-left: 25px;
+  }
+  .content__lvl2 {
+    margin-top: 50px;
+  }
+  .logo-no-int {
+    margin-right: 0;
+  }
+  .logo-rsschool {
+    margin-right: 75px;
+  }
+  .footer__button {
+    padding: 0;
+    width: 207px;
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+  .footer__text {
+    margin: 45px 0 0 37%;
+  }
+  .copyrate {
+    margin: 10px 0 0 15%;
   }
 }

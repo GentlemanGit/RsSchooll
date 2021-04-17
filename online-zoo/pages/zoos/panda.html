@@ -1,248 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panda</title>
-</head>
+  <body>
+    <link rel="stylesheet" href="../../normalize.css" />
+    <link rel="stylesheet" href="zoos-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <link rel="stylesheet" href="../../normalize.css">
-  <link rel="stylesheet" href="zoos-style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <header class="centre">
+      <nav>
+        <ul class="nav__header">
+          <li>
+            <a href="../main-page.html">
+              <img class="logo" src="../../assets/logo.svg" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="about" href="../main-page.html">About</a>
+          </li>
+          <li>
+            <a class="map" href="../map.html">Map</a>
+          </li>
+          <li>
+            <a class="zoos" href="">Zoos</a>
+          </li>
+          <li>
+            <a class="contact-us" href="../error-404.html">Contact us</a>
+          </li>
+          <li>
+            <a
+              class="design"
+              href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo"
+              >Design</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>Online Zoo</h1>
+    </header>
 
-  <header class="centre">
-    <nav>
-      <ul class="nav__ul">
-        <li>
-          <a href="../main-page.html">
-            <img class="logo" src="../../assets/logo.svg" alt="logo">
+    <main>
+      <aside class="aside-close"></aside>
+      <aside class="aside-open">
+        <div class="aside-content">
+          <a href="alligator.html">
+            <figure class="aside-animal alligator">
+              <div class="tooltip">
+                <img src="../../assets/map-alligator.png" alt="alligator" />
+                <div class="tooltiptext">
+                  <span> ALLIGATOR, Florida, USA </span>
+                </div>
+              </div>
+            </figure>
           </a>
-        </li>
-        <li>
-          <a class="about" href="../main-page.html">About</a>
-        </li>
-        <li>
-          <a class="map" href="../map.html">Map</a>
-        </li>
-        <li>
-          <a class="zoos" href="">Zoos</a>
-        </li>
-        <li>
-          <a class="contact-us" href="../error-404.html">Contact us</a>
-        </li>
-        <li>
-          <a class="design" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo">Design</a>
-        </li>
-      </ul>
-    </nav>
-    <h1>Online Zoo</h1>
-  </header>
-
-  <main>
-    <aside class="aside-close"></aside>
-    <aside class="aside-open">
-      <div class="aside-content">
-        <a href="alligator.html">
-          <figure class="aside-animal alligator">
+          <figure class="aside-animal panda">
             <div class="tooltip">
-              <img src="../../assets/map-alligator.png" alt="alligator">
+              <img src="../../assets/map-panda.png" alt="panda" />
               <div class="tooltiptext">
-                <span>
-              ALLIGATOR, Florida, USA
-            </span>
+                <span> PANDA, China </span>
               </div>
             </div>
           </figure>
-        </a>
-        <figure class="aside-animal panda">
-          <div class="tooltip">
-            <img src="../../assets/map-panda.png" alt="panda">
-            <div class="tooltiptext">
-              <span>
-              PANDA, China
-          </span>
-            </div>
-          </div>
-        </figure>
-        <a href="eagle.html">
-          <figure class="aside-animal eagle">
-            <div class="tooltip">
-              <img src="../../assets/map-eagle.png" alt="eagle">
-              <div class="tooltiptext">
-                <span>
-              EAGLE, California, USA
-            </span>
+          <a href="eagle.html">
+            <figure class="aside-animal eagle">
+              <div class="tooltip">
+                <img src="../../assets/map-eagle.png" alt="eagle" />
+                <div class="tooltiptext">
+                  <span> EAGLE, California, USA </span>
+                </div>
               </div>
-            </div>
-          </figure>
-        </a>
-        <a href="gorilla.html">
-          <figure class="aside-animal gorilla">
-            <div class="tooltip">
-              <img src="../../assets/map-gorilla.png" alt="gorilla">
-              <div class="tooltiptext">
-                <span>
-              GORILLA, Eastern DRC
-              </span>
+            </figure>
+          </a>
+          <a href="gorilla.html">
+            <figure class="aside-animal gorilla">
+              <div class="tooltip">
+                <img src="../../assets/map-gorilla.png" alt="gorilla" />
+                <div class="tooltiptext">
+                  <span> GORILLA, Eastern DRC </span>
+                </div>
               </div>
+            </figure>
+          </a>
+          <a href="">
+            <figure class="feed">
+              <img src="../../assets/zoos-feed.svg" alt="feed" />
+            </figure>
+          </a>
+        </div>
+      </aside>
+      <div class="content centre">
+        <h2>Panda</h2>
+        <div class="content__video centre">
+          <iframe
+            class="main-video"
+            src="https://www.youtube.com/embed/OObOQ2GElhA?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/65JHo3Cy2tY?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/65JHo3Cy2tY?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/65JHo3Cy2tY?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/65JHo3Cy2tY?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="content__text centre">
+          <div class="main-text">
+            <div>ZOO: The Shenshuping Gengda Panda Center (Sichuan, China)</div>
+            <div>ENCLOSURE TYPE: Imitation of the natural environment</div>
+          </div>
+          <div class="sub-text">
+            <div class="sub-text1">
+              <details open>
+                <summary>
+                  <div class="summary__text">Population</div>
+                </summary>
+                <div class="details__text">
+                  There are only an estimated 1600 pandas in the wild and about
+                  325 in captivity.
+                </div>
+              </details>
+              <details open>
+                <summary>
+                  <div class="summary__text">Nutrition</div>
+                </summary>
+                <div class="details__text">
+                  Bamboo is indispensable for the big panda, 99% of their food
+                  is made up of shoots and leaves of the plant. Bamboo does not
+                  have a high nutritional value. And to meet the daily energy
+                  requirement, pandas need to eat between 23 and 40 kg of
+                  evergreen per day.
+                </div>
+              </details>
             </div>
-          </figure>
-        </a>
-        <a href="">
-          <figure class="feed">
-            <img src="../../assets/zoos-feed.svg" alt="feed">
-          </figure>
-        </a>
-      </div>
-    </aside>
-    <div class="content centre">
-      <h2>Panda</h2>
-      <div class="content__video centre">
-        <iframe class="main-video" src="https://www.youtube.com/embed/OObOQ2GElhA?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/65JHo3Cy2tY?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/65JHo3Cy2tY?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/65JHo3Cy2tY?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/65JHo3Cy2tY?" frameborder="0" allowfullscreen>
-        </iframe>
-      </div>
-      <div class="content__text centre">
-        <div class="main-text">
-          <div>ZOO: The Shenshuping Gengda Panda Center (Sichuan, China)</div>
-          <div>Enclosure type: Imitation of the natural environment</div>
-        </div>
-        <div class="sub-text">
-          <div class="sub-text1">
-            <details open>
-              <summary>
-                <div class="summary__text">Population</div>
-              </summary>
-              <div class="details__text">There are only an estimated 1600 pandas in the wild and about 325 in captivity.</div>
-            </details>
-            <details open>
-              <summary>
-                <div class="summary__text">Nutrition</div>
-              </summary>
-              <div class="details__text">Bamboo is indispensable for the big panda, 99% of their food is made up of shoots and leaves of the plant. Bamboo does not have a high nutritional value. And to meet the daily energy requirement, pandas need to eat between 23 and 40 kg of
-                evergreen per day.</div>
-            </details>
-          </div>
-          <div>
-            <details open>
-              <summary>
-                <div class="summary__text">Habitat</div>
-              </summary>
-              <div class="details__text">Bamboo will occasionally «die off» forcing pandas to migrate to other areas to find enough bamboo. Today panda habitat is limited to the mountains in only a few provinces of southwestern China.</div>
-            </details>
-            <details open>
-              <summary>
-                <div class="summary__text">Interesting facts</div>
-              </summary>
-              <div class="details__text">Pandas are slow moving and spend a considerable amount of time eating (16 — 24 hour period) and sleeping. Giant panda fur is coarse, dense and somewhat oily. Their coat keeps them warm in the cool moist climate of the mountain forests.</div>
-            </details>
+            <div>
+              <details open>
+                <summary>
+                  <div class="summary__text">Habitat</div>
+                </summary>
+                <div class="details__text">
+                  Bamboo will occasionally «die off» forcing pandas to migrate
+                  to other areas to find enough bamboo. Today panda habitat is
+                  limited to the mountains in only a few provinces of
+                  southwestern China.
+                </div>
+              </details>
+              <details open>
+                <summary>
+                  <div class="summary__text">Interesting facts</div>
+                </summary>
+                <div class="details__text">
+                  Pandas are slow moving and spend a considerable amount of time
+                  eating (16 — 24 hour period) and sleeping. Giant panda fur is
+                  coarse, dense and somewhat oily. Their coat keeps them warm in
+                  the cool moist climate of the mountain forests.
+                </div>
+              </details>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="footer__bg">
-      <div class="footer__content centre">
-        <nav>
-          <ul class="nav__ul ">
-            <li>
-              <a href="../main-page.html">
-                <img class="logo" src="../../assets/logo.svg" alt="logo">
-              </a>
-            </li>
-            <li>
-              <a href=""><button class="footer__button">Donate for volunteers</button></a>
-            </li>
-            <li>
-              <ul class="ul__ul ul1">
-                <li class="ul__li1">
-                  <a href="../main-page.html">About</a>
-                </li>
-                <li>
-                  <a href="../map.html">Map</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="ul__ul">
-                <li class="ul__li1">
-                  <a href="../error-404.html">Contact us</a>
-                </li>
-                <li>
-                  <a href="">Feedback</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="ul__link">
-                <li>
-                  <a href="https://www.instagram.com">
-                    <img src="../../assets/Insta.svg" alt="instagram">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com">
-                    <img src="../../assets/Facebook.svg" alt="facebook">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com">
-                    <img src="../../assets/Twitter.svg" alt="twitter">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com">
-                    <img src="../../assets/Youtube.svg" alt="youtube">
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="content__lvl2">
-          <ul>
-            <li>
-              <img title="Rolling Scopes School" class="logo-no-int" src="../../assets/logo-rsschool.svg" alt="logo-rsschool">
-            </li>
-            <li>
-              <img title="Yem Digital" class="logo-no-int" src="../../assets/logo-disignschool.svg" alt="logo-designschool">
-            </li>
-          </ul>
-          <div class="copyrate">
-            Copyright ©RSSchool and ©Yem Digital 2020 - 2021
-          </div>
-          <div>
-            Grigoreva Margarita
-          </div>
+    <footer>
+      <div class="footer__bg">
+        <div class="footer__content centre">
+          <nav class="nav__footer">
+            <a href="main-page.html">
+              <img class="logo" src="../../assets/logo.svg" alt="logo" />
+            </a>
+            <a href="" class="footer-order__button"
+              ><button class="footer__button">Donate for volunteers</button></a
+            >
+            <ul class="footer__ul ul1">
+              <li class="ul__li1">
+                <a href="main-page.html">About</a>
+              </li>
+              <li>
+                <a href="map.html">Map</a>
+              </li>
+            </ul>
+            <ul class="footer__ul">
+              <li class="ul__li1">
+                <a href="error-404.html">Contact us</a>
+              </li>
+              <li>
+                <a href="">Feedback</a>
+              </li>
+            </ul>
+            <ul class="ul__link">
+              <li>
+                <a href="https://www.instagram.com">
+                  <img src="../../assets/Insta.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <img src="../../assets/Facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com">
+                  <img src="../../assets/Twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com">
+                  <img src="../../assets/Youtube.svg" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="content__lvl2 footer-order__logo-no-int">
+              <li>
+                <img
+                  title="Rolling Scopes School"
+                  class="logo-no-int logo-rsschool"
+                  src="../../assets/logo-rsschool.svg"
+                  alt="logo-rsschool"
+                />
+              </li>
+              <li>
+                <img
+                  title="Yem Digital"
+                  class="logo-no-int"
+                  src="../../assets/logo-disignschool.svg"
+                  alt="logo-designschool"
+                />
+              </li>
+            </ul>
+            <div class="copyrate content__lvl2 footer__text">
+              Copyright ©RSSchool and ©Yem Digital 2020 - 2021
+            </div>
+            <div class="content__lvl2 footer__text">Grigoreva Margarita</div>
+          </nav>
         </div>
       </div>
-    </div>
-  </footer>
-  <style>
-    .panda img {
-      pointer-events: none;
-      border: 4px solid #70CB0E;
-    }
-    
-    .panda .tooltiptext {
-      visibility: visible;
-    }
-  </style>
-</body>
+    </footer>
+    <style>
+      .panda img {
+        pointer-events: none;
+        border: 4px solid #70cb0e;
+      }
 
+      .panda .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+  </body>
 </html>
