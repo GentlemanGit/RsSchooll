@@ -44,6 +44,22 @@ li a:visited {
 .about {
   margin-left: 22px;
 }
+.c-us {
+  width: 90px;
+}
+.burger button {
+  width: 36px;
+  height: 22px;
+  background-image: url(../../assets/burger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.burger {
+  display: none;
+}
 
 .zoos {
   text-shadow: #70cb0e 0px 0px 2px;
@@ -79,8 +95,9 @@ main {
 
 aside {
   margin-top: 207px;
+  top: 5%;
   z-index: 1;
-  position: fixed;
+  position: sticky;
 }
 
 .aside-close {
@@ -185,6 +202,7 @@ aside {
 
 .content {
   max-width: 1160px;
+  margin-top: -582px;
   padding-top: 80px;
 }
 
@@ -204,7 +222,7 @@ h2 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .main-video {
@@ -214,12 +232,8 @@ h2 {
 
 .small-video {
   margin-top: 20px;
-  margin-right: 20px;
   width: 275px;
   height: 155px;
-}
-.small-video:last-child {
-  margin-right: 0;
 }
 
 .content__text {
@@ -267,50 +281,33 @@ h2 {
   margin-right: 20px;
 }
 
-details {
+.details {
   margin-top: 20px;
   width: 530px;
-  padding: 8px 20px;
+  padding: 20px;
   background-color: #a7e1ff;
   text-align: left;
-  height: 44px;
-}
-
-details[open] {
-  height: 128px;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::after {
-  content: url(../../assets/zoos-arow-open.svg);
-  cursor: pointer;
-}
-
-details[open] summary::after {
-  cursor: pointer;
-  padding-top: 40px;
-  content: url(../../assets/zoos-arow-close.svg);
-}
-
-details[open] .summary__text {
-  margin-top: -40px;
-}
-
-.details__text {
-  margin-top: -50px;
-  width: 470px;
-}
-
-summary {
-  outline: none;
-  text-align: left;
-  text-transform: uppercase;
+  height: 102px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+}
+.details-all-text {
+  height: 102px;
+}
+.details__text {
+  margin-top: 7px;
+  width: 470px;
+  height: auto;
+}
+.summary__text {
+  text-transform: uppercase;
+}
+.details-arrow {
+  width: 45px;
+  height: 45px;
+  background-image: url(../../assets/zoos-arow-close.svg);
+  margin-left: 15px;
 }
 
 footer {
@@ -331,7 +328,7 @@ footer {
 }
 
 .footer__content {
-  margin-top: 70px;
+  margin-top: 80px;
   max-width: 1160px;
   display: flex;
   flex-wrap: wrap;
@@ -423,6 +420,11 @@ a button:hover,
 a:hover {
   text-shadow: #70cb0e 0px 0px 2px;
 }
+.btn-feed {
+  margin-top: 20px;
+  width: 300px;
+  display: none;
+}
 
 @media screen and (max-width: 1589px) {
   .aside-open {
@@ -431,88 +433,219 @@ a:hover {
   .aside-close {
     display: block;
   }
-}
-@media screen and (max-width: 1160px) {
-  .about {
-    margin-left: 15px;
-  }
-  header,
-  .content__text,
   .content {
-    max-width: 600px;
+    margin-top: -252px;
   }
+  @media screen and (max-width: 1160px) {
+    .about {
+      margin-left: 15px;
+    }
+    header,
+    .content__text,
+    .content {
+      max-width: 600px;
+    }
+    .details {
+      width: 560px;
+    }
+    .main-text {
+      width: 560px;
+    }
+    .content__video {
+      justify-content: space-between;
+    }
+    .main-video {
+      height: 338px;
+      width: 93.75vw;
+    }
+    .small-video {
+      height: 167px;
+      width: 290px;
+    }
 
-  details {
-    width: 560px;
-  }
-  .main-text {
-    width: 560px;
-  }
-  .content__video {
-    justify-content: space-between;
-  }
-  .main-video {
-    height: 338px;
-    width: 93.75vw;
-  }
-  .small-video {
-    height: 167px;
-    width: 290px;
-    margin-right: 0;
-  }
+    .footer__content {
+      max-width: 600px;
+    }
+    footer {
+      height: 432px;
+    }
 
-  .footer__content {
-    max-width: 600px;
+    .footer__bg {
+      height: 360px;
+    }
+    .footer-order__logo-no-int {
+      order: 2;
+    }
+    .footer-order__button {
+      order: 3;
+    }
+    .footer__text {
+      order: 4;
+    }
+    .copyrate {
+      order: 5;
+    }
+    .footer__ul {
+      margin-top: 12px;
+      margin-left: 0;
+    }
+    .ul1 {
+      margin-right: 30px;
+      margin-left: 0;
+    }
+    .ul__link {
+      margin-left: 25px;
+    }
+    .content__lvl2 {
+      margin-top: 50px;
+    }
+    .logo-no-int {
+      margin-right: 0;
+    }
+    .logo-rsschool {
+      margin-right: 75px;
+    }
+    .footer__button {
+      padding: 0;
+      width: 207px;
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+    .footer__text {
+      margin: 45px 0 0 37%;
+    }
+    .copyrate {
+      margin: 10px 0 0 15%;
+    }
   }
-  footer {
-    height: 432px;
+  @media screen and (max-width: 600px) {
+    .content__text,
+    .content,
+    header {
+      max-width: 300px;
+    }
+    .c-us,
+    .map,
+    .zoos,
+    .contact-us,
+    .design,
+    .about {
+      display: none;
+    }
+    .burger {
+      display: block;
+      margin-left: 152px;
+    }
+    .nav__header li {
+      margin-right: 0;
+    }
+    .details {
+      height: auto;
+      width: 260px;
+    }
+    .details-all-text {
+      height: auto;
+    }
+    .details__text {
+      width: 200px;
+    }
+    .main-text {
+      width: 260px;
+      height: 100px;
+    }
+    .main-text div:last-child {
+      margin-right: 0;
+    }
+    .main-video {
+      height: 169px;
+      width: 93.75vw;
+    }
+    .small-video {
+      height: 82px;
+      width: 140px;
+    }
+    .aside-close {
+      margin-left: 0;
+    }
+    .btn-feed {
+      display: block;
+    }
   }
+  @media screen and (max-width: 580px) {
+    .footer__content {
+      margin-top: 75px;
+      max-width: 300px;
+    }
+    footer {
+      height: 814px;
+    }
 
-  .footer__bg {
-    height: 360px;
-  }
-  .footer-order__logo-no-int {
-    order: 2;
-  }
-  .footer-order__button {
-    order: 3;
-  }
-  .footer__text {
-    order: 4;
-  }
-  .copyrate {
-    order: 5;
-  }
-  .footer__ul {
-    margin-top: 12px;
-    margin-left: 0;
-  }
-  .ul1 {
-    margin-right: 30px;
-    margin-left: 0;
-  }
-  .ul__link {
-    margin-left: 25px;
-  }
-  .content__lvl2 {
-    margin-top: 50px;
-  }
-  .logo-no-int {
-    margin-right: 0;
-  }
-  .logo-rsschool {
-    margin-right: 75px;
-  }
-  .footer__button {
-    padding: 0;
-    width: 207px;
-    margin-top: 40px;
-    margin-left: 50px;
-  }
-  .footer__text {
-    margin: 45px 0 0 37%;
-  }
-  .copyrate {
-    margin: 10px 0 0 15%;
+    .footer__bg {
+      height: 742px;
+    }
+
+    .nav__footer {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .footer-order__logo-no-int {
+      order: 3;
+    }
+    .footer-order__button {
+      order: 2;
+    }
+    .footer__text {
+      order: 4;
+    }
+    .copyrate {
+      order: 5;
+    }
+
+    .footer__ul li {
+      margin-left: 5px;
+    }
+    .footer__ul {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-right: 0;
+    }
+    .footer__ul .ul__li1 {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+    .nav__footer .logo {
+      margin-right: 0px;
+      margin-bottom: 33px;
+    }
+
+    .ul__link {
+      margin-top: 50px;
+      order: 3;
+      margin-left: -15px;
+    }
+    .content__lvl2 {
+      margin-top: 50px;
+    }
+    .logo-no-int {
+      margin-right: 0;
+      margin-top: -8px;
+    }
+    .logo-rsschool {
+      margin-right: 60px;
+    }
+    .footer__button {
+      padding: 0;
+      width: 207px;
+      margin-top: 50px;
+      margin-left: -10px;
+    }
+    .footer__text {
+      margin: 47px 0 0 0%;
+    }
+    .copyrate {
+      margin: 12px 0 0 15%;
+    }
   }
 }

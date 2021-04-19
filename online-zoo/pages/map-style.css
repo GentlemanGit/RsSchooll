@@ -48,6 +48,22 @@ li a:visited {
   text-shadow: #70cb0e 0px 0px 2px;
   pointer-events: none;
 }
+.c-us {
+  width: 90px;
+}
+.burger button {
+  width: 36px;
+  height: 22px;
+  background-image: url(../assets/burger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.burger {
+  display: none;
+}
 
 button {
   background: #70cb0e;
@@ -176,7 +192,7 @@ main {
 }
 
 .map-button {
-  margin-left: calc(100vw - 67px);
+  margin-left: calc(100% - 52px);
   position: sticky;
   bottom: 20px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
@@ -405,7 +421,7 @@ a:hover {
   }
   .main-content {
     height: 745px;
-    width: 100vw;
+    width: 100%;
   }
 
   .footer__bg {
@@ -461,7 +477,6 @@ a:hover {
   .main-content {
     background-position: top;
     background-size: cover;
-    width: 100vw;
     height: 600px;
   }
   main {
@@ -508,7 +523,106 @@ a:hover {
   .tooltip:hover .tooltiptext {
     visibility: hidden;
   }
-  .map-button {
-    margin-left: calc(100vw - 52px);
+}
+@media screen and (max-width: 600px) {
+  header {
+    max-width: 300px;
+  }
+  .c-us,
+  .map,
+  .zoos,
+  .contact-us,
+  .design,
+  .about {
+    display: none;
+  }
+  .burger {
+    display: block;
+    margin-left: 152px;
+  }
+  .nav__header li {
+    margin-right: 0;
+  }
+  .main-content {
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .footer__content {
+    max-width: 300px;
+  }
+  footer {
+    height: 814px;
+  }
+
+  .footer__bg {
+    height: 742px;
+  }
+
+  .nav__footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer-order__logo-no-int {
+    order: 3;
+  }
+  .footer-order__button {
+    order: 2;
+  }
+  .footer__text {
+    order: 4;
+  }
+  .copyrate {
+    order: 5;
+  }
+
+  .footer__ul li {
+    margin-left: 5px;
+  }
+  .footer__ul {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+  .footer__ul .ul__li1 {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .nav__footer .logo {
+    margin-right: 0px;
+    margin-bottom: 33px;
+  }
+
+  .ul__link {
+    margin-top: 50px;
+    order: 3;
+    margin-left: -15px;
+  }
+  .content__lvl2 {
+    margin-top: 50px;
+  }
+  .logo-no-int {
+    margin-right: 0;
+    margin-top: -8px;
+  }
+  .logo-rsschool {
+    margin-right: 60px;
+  }
+  .footer__button {
+    padding: 0;
+    width: 207px;
+    margin-top: 50px;
+    margin-left: -10px;
+  }
+  .footer__text {
+    margin: 47px 0 0 0%;
+  }
+  .copyrate {
+    margin: 12px 0 0 15%;
   }
 }
