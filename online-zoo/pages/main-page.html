@@ -1,330 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>online-zoo</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>online-zoo</title>
-</head>
+  <body>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="main-page-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <link rel="stylesheet" href="../normalize.css">
-  <link rel="stylesheet" href="main-page-style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
-
-  <section class="background-section1">
-    <header class="centre">
-      <nav>
-        <ul class="nav__ul">
-          <li>
-            <a href="main-page.html">
-              <img class="logo" src="../assets/logo.svg" alt="logo">
-            </a>
-          </li>
-          <li>
-            <a class="about" href="main-page.html">About</a>
-          </li>
-          <li>
-            <a class="map" href="map.html">Map</a>
-          </li>
-          <li>
-            <a class="zoos" href="zoos/panda.html">Zoos</a>
-          </li>
-          <li>
-            <a class="contact-us" href="error-404.html">Contact us</a>
-          </li>
-          <li>
-            <a class="design" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo">Design</a>
-          </li>
-        </ul>
-      </nav>
-      <h1>Online Zoo</h1>
-    </header>
-    <div class=" section1 centre">
-      <div class="section1__text">Watch your favorite animal ONLINE</div>
-      <a href="zoos/panda.html">
-        <button class="section1__button"><div class="button__img-play"></div> Play</button>
-      </a>
-    </div>
-  </section>
-  <section class="section2">
-    <div class="section2__title">How it works</div>
-    <nav class="section2__slider">
-      <ul class="section2__slider-img">
-        <li>
-          <a href="">
-            <img class="eagle" src="../assets/eagle.png" alt="eagle">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="tiger" src="../assets/tiger.png" alt="tigre">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="panda" src="../assets/panda.png" alt="panda">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="monkey" src="../assets/monkey.png" alt="monkey">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img class="elephant" src="../assets/elephant.png" alt="elephant">
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="section2__text">
-      The application Оnline zoo will allow you to watch zoos' and nature reserves' inhabitants in live. Currently, under video-surveillance are pandas in China, eagles on Catalina Island (USA), alligators in Florida and gorillas in the Congo. We are expanding
-      our capabilities and soon online you will meet Arctic snowy owl in Alaska, Penguin in California, Elephant from South Africa and Polar bear from Canada. You will see unique video-shots at any time of the day. If you liked a pet you watch and you
-      want to please it with a delicious treat, you can pay a donation and the animal will receive a surprise from you during feeding hours. We want to thank you for helping the animals and give you <a href="">discount coupons</a> from our partners.
-    </div>
-  </section>
-  <section class="section3">
-    <div class="section3__title">Pets in zoo</div>
-    <nav class="section3__slider centre">
-      <a href="">
-        <div class="slider__arow-left"></div>
-      </a>
-      <ul class="section3__slider-img">
-        <li>
-          <a href="zoos/panda.html">
-            <figure class="zoo-panda">
-              <figcaption class="slider-img__img-text">Panda, China</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="zoos/alligator.html">
-            <figure class="zoo-aligator">
-              <figcaption class="slider-img__img-text">Alligator, USA</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <a href="zoos/gorilla.html">
-            <figure class="zoo-gorila">
-              <figcaption class="slider-img__img-text">Gorilla, Eastern DRC</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <figure class="zoo-elephant">
-            <figcaption class="slider-img__img-text">Elephant, South Africa</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure class="zoo-polar-bear">
-            <figcaption class="slider-img__img-text">Polar bear, Canada</figcaption>
-          </figure>
-        </li>
-        <li>
-          <a href="zoos/eagle.html">
-            <figure class="zoo-eagle">
-              <figcaption class="slider-img__img-text">Bald eagle, USA</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li>
-          <figure class="zoo-owl">
-            <figcaption class="slider-img__img-text">Arctic snowy owl, Alaska</figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure class="zoo-penguin">
-            <figcaption class="slider-img__img-text">Penguin, USA</figcaption>
-          </figure>
-        </li>
-      </ul>
-      <a href="">
-        <div class="slider__arow-right"></div>
-      </a>
-    </nav>
-    <a href="map.html">
-      <button class="section3__button">Choose your favorite</button>
-    </a>
-  </section>
-  <section class="section4">
-    <div class="section4__title">Pay and feed</div>
-    <div class="section4__instructions">
-      <figure class="instructions__pay-card">
-        <img src="../assets/pay.svg" alt="pay">
-        <figcaption class="instructions__text">
-          You can pay for a donation to any animal using your Credit/Debit card
-        </figcaption>
-      </figure>
-      <figure class="instructions__bank">
-        <img src="../assets/bank.svg" alt="bank">
-        <figcaption class="instructions__text">
-          Donations will go to the account of the zoo or nature reserve
-        </figcaption>
-      </figure>
-      <figure class="instructions__panda">
-        <img src="../assets/panda.svg" alt="panda">
-        <figcaption class="instructions__text">
-          The animal will receive a delicious treat during feeding hours
-        </figcaption>
-      </figure>
-    </div>
-  </section>
-  <section class="section5">
-    <div class="section5__title">Testimonials</div>
-    <nav class="section5__slider centre">
-      <a href="">
-        <div class="slider__arow-left slider3"></div>
-      </a>
-      <ul class="slider-ul">
-        <li class="slider-ul__testimonial">
-
-          <div class="testimonial__user">
-            <img class="avatar" src="../assets/user1-avatar.png" alt="user1-avatar">
-            <div class="nickname-donate">
-              <div class="user__nickname">Karen Maitland</div>
-              <div class="user__donate">
-                <img src="../assets/money.svg" alt="money"> +$10
-              </div>
-            </div>
-          </div>
-          <div class="testimonial__text">"Thank you so much for these wonderful live webcams of the eagles on Catalina Island. Being able to watch them in their natural habitat as opposed to zoos is so wonderful. I cannot see myself ever being able to come up there to see them in person,
-            so this is a great substitute. Thank you again."</div>
-
-        </li>
-        <li class="slider-ul__testimonial">
-
-          <div class="testimonial__user">
-            <img class="avatar" src="../assets/user2-avatar.png" alt="user1-avatar">
-            <div class="nickname-donate">
-              <div class="user__nickname">Sara Jones</div>
-              <div class="user__donate">
-                <img src="../assets/money.svg" alt="money"> +$13
-              </div>
-            </div>
-          </div>
-          <div class="testimonial__text">"A disability prevents me from enjoying the outdoors and travel like I used to do. I really enjoy all the live cams and can spend HOURS watching real-time entertainment. Wild life style!"</div>
-
-        </li>
-        <li class="slider-ul__testimonial">
-
-          <div class="testimonial__user">
-            <img class="avatar" src="../assets/user3-avatar.png" alt="user1-avatar">
-            <div class="nickname-donate">
-              <div class="user__nickname">Alex Barden</div>
-              <div class="user__donate">
-                <img src="../assets/money.svg" alt="money"> +$7
-              </div>
-            </div>
-          </div>
-          <div class="testimonial__text">"Here's a huge "thank-you" from New Hampshire - you allow me to travel the world without ever leaving the comfort of my office chair. Jammies on and coffee cup in hand, I am Phineas Fogg!!"</div>
-
-        </li>
-        <li class="slider-ul__testimonial">
-
-          <div class="testimonial__user">
-            <img class="avatar" src="../assets/user4-avatar.png" alt="user1-avatar">
-            <div class="nickname-donate">
-              <div class="user__nickname">Alene Ray</div>
-              <div class="user__donate">
-                <img src="../assets/money.svg" alt="money"> +$18
-              </div>
-            </div>
-          </div>
-          <div class="testimonial__text">"Thank you for all the knowledge, education, pleasure and happiness you have add to all our lives at no expense on our part. My humble thanks and gratitude are being wished for all of you. I want to thank you and feed the animals a small reward"</div>
-        </li>
-      </ul>
-      <a href="">
-        <div class="slider__arow-right slider3"></div>
-      </a>
-    </nav>
-    <a href="">
-      <button class="section5__button">Leave feedback</button>
-    </a>
-  </section>
-  <footer>
-    <div class="footer__bg">
-      <div class="footer__content centre">
+    <section class="background-section1">
+      <header class="centre">
         <nav>
-          <ul class="nav__ul ">
+          <ul class="nav__header">
             <li>
               <a href="main-page.html">
-                <img class="logo" src="../assets/logo.svg" alt="logo">
+                <img class="logo" src="../assets/logo.svg" alt="logo" />
               </a>
             </li>
             <li>
-              <a href=""><button class="footer__button">Donate for volunteers</button></a>
+              <a class="about" href="main-page.html">About</a>
             </li>
             <li>
-              <ul class="ul__ul ul1">
-                <li class="ul__li1">
-                  <a href="main-page.html">About</a>
-                </li>
-                <li>
-                  <a href="map.html">Map</a>
-                </li>
-              </ul>
+              <a class="map" href="map.html">Map</a>
             </li>
             <li>
-              <ul class="ul__ul">
-                <li class="ul__li1">
-                  <a href="error-404.html">Contact us</a>
-                </li>
-                <li>
-                  <a href="">Feedback</a>
-                </li>
-              </ul>
+              <a class="zoos" href="zoos/panda.html">Zoos</a>
+            </li>
+            <li class="c-us">
+              <a class="contact-us" href="error-404.html">Contact us</a>
             </li>
             <li>
-              <ul class="ul__link">
-                <li>
-                  <a href="https://www.instagram.com">
-                    <img src="../assets/Insta.svg" alt="instagram">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com">
-                    <img src="../assets/Facebook.svg" alt="facebook">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com">
-                    <img src="../assets/Twitter.svg" alt="twitter">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com">
-                    <img src="../assets/Youtube.svg" alt="youtube">
-                  </a>
-                </li>
-              </ul>
+              <a
+                class="design"
+                href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo"
+                >Design</a
+              >
+            </li>
+            <li>
+              <a class="burger" href=""><button></button></a>
             </li>
           </ul>
         </nav>
-        <div class="content__lvl2">
-          <ul>
-            <li>
-              <img title="Rolling Scopes School" class="logo-no-int" src="../assets/logo-rsschool.svg" alt="logo-rsschool">
-            </li>
-            <li>
-              <img title="Yem Digital" class="logo-no-int" src="../assets/logo-disignschool.svg" alt="logo-designschool">
-            </li>
-          </ul>
-          <div class="copyrate">
-            Copyright ©RSSchool and ©Yem Digital 2020 - 2021
-          </div>
-          <div>
-            Grigoreva Margarita
-          </div>
+        <h1>Online Zoo</h1>
+      </header>
+      <div class="section1 centre">
+        <div class="section1__text">Watch your favorite animal ONLINE</div>
+        <a href="zoos/panda.html">
+          <button class="section1__button">
+            <div class="button__img-play"></div>
+            Play
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="section2__title">How it works</div>
+      <nav class="section2__slider">
+        <ul class="section2__slider-img">
+          <li>
+            <a href="">
+              <img class="eagle" src="../assets/eagle.png" alt="eagle" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="tiger" src="../assets/tiger.png" alt="tigre" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="panda" src="../assets/panda.png" alt="panda" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img class="monkey" src="../assets/monkey.png" alt="monkey" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                class="elephant"
+                src="../assets/elephant.png"
+                alt="elephant"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="section2__text">
+        The application Оnline zoo will allow you to watch zoos' and nature
+        reserves' inhabitants in live. Currently, under video-surveillance are
+        pandas in China, eagles on Catalina Island (USA), alligators in Florida
+        and gorillas in the Congo. We are expanding our capabilities and soon
+        online you will meet Arctic snowy owl in Alaska, Penguin in California,
+        Elephant from South Africa and Polar bear from Canada. You will see
+        unique video-shots at any time of the day. If you liked a pet you watch
+        and you want to please it with a delicious treat, you can pay a donation
+        and the animal will receive a surprise from you during feeding hours. We
+        want to thank you for helping the animals and give you
+        <a href="">discount coupons</a> from our partners.
+      </div>
+    </section>
+    <section class="section3">
+      <div class="section3__title">Pets in zoo</div>
+      <nav class="section3__slider centre">
+        <a class="slider__arow-left" href=""> </a>
+        <ul class="section3__slider-img">
+          <li>
+            <a href="zoos/panda.html">
+              <figure class="zoo-panda">
+                <figcaption class="slider-img__img-text">
+                  Panda, China
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="zoos/alligator.html">
+              <figure class="zoo-aligator">
+                <figcaption class="slider-img__img-text">
+                  Alligator, USA
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="zoos/gorilla.html">
+              <figure class="zoo-gorila">
+                <figcaption class="slider-img__img-text">
+                  Gorilla, Eastern DRC
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <figure class="zoo-elephant">
+              <figcaption class="slider-img__img-text">
+                Elephant, South Africa
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="zoo-polar-bear">
+              <figcaption class="slider-img__img-text">
+                Polar bear, Canada
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <a href="zoos/eagle.html">
+              <figure class="zoo-eagle">
+                <figcaption class="slider-img__img-text">
+                  Bald eagle, USA
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <figure class="zoo-owl">
+              <figcaption class="slider-img__img-text">
+                Arctic snowy owl, Alaska
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="zoo-penguin">
+              <figcaption class="slider-img__img-text">Penguin, USA</figcaption>
+            </figure>
+          </li>
+        </ul>
+        <a class="slider__arow-right" href=""> </a>
+      </nav>
+      <a href="map.html">
+        <button class="section3__button">Choose your favorite</button>
+      </a>
+    </section>
+    <section class="section4">
+      <div class="section4__title">Pay and feed</div>
+      <div class="section4__instructions">
+        <figure class="instructions__pay-card">
+          <figcaption>
+            You can pay for a donation to any animal using your Credit/Debit
+            card
+          </figcaption>
+        </figure>
+        <figure class="instructions__bank">
+          <figcaption>
+            Donations will go to the account of the zoo or nature reserve
+          </figcaption>
+        </figure>
+        <figure class="instructions__panda">
+          <figcaption>
+            The animal will receive a delicious treat during feeding hours
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section5">
+      <div class="section5__title">Testimonials</div>
+      <nav class="section5__slider centre">
+        <a class="slider__arow-left slider3" href=""> </a>
+        <ul class="slider-ul">
+          <li class="slider-ul__testimonial">
+            <div class="testimonial__user">
+              <img
+                class="avatar"
+                src="../assets/user1-avatar.png"
+                alt="user1-avatar"
+              />
+              <div class="nickname-donate">
+                <div class="user__nickname">Karen Maitland</div>
+                <div class="user__donate">
+                  <img src="../assets/money.svg" alt="money" /> +$10
+                </div>
+              </div>
+            </div>
+            <div class="testimonial__text">
+              "Thank you so much for these wonderful live webcams of the eagles
+              on Catalina Island. Being able to watch them in their natural
+              habitat as opposed to zoos is so wonderful. I cannot see myself
+              ever being able to come up there to see them in person, so this is
+              a great substitute. Thank you again."
+            </div>
+          </li>
+          <li class="slider-ul__testimonial">
+            <div class="testimonial__user">
+              <img
+                class="avatar"
+                src="../assets/user2-avatar.png"
+                alt="user1-avatar"
+              />
+              <div class="nickname-donate">
+                <div class="user__nickname">Sara Jones</div>
+                <div class="user__donate">
+                  <img src="../assets/money.svg" alt="money" /> +$13
+                </div>
+              </div>
+            </div>
+            <div class="testimonial__text">
+              "A disability prevents me from enjoying the outdoors and travel
+              like I used to do. I really enjoy all the live cams and can spend
+              HOURS watching real-time entertainment. Wild life style!"
+            </div>
+          </li>
+          <li class="slider-ul__testimonial pre-last-testimonial">
+            <div class="testimonial__user">
+              <img
+                class="avatar"
+                src="../assets/user3-avatar.png"
+                alt="user1-avatar"
+              />
+              <div class="nickname-donate">
+                <div class="user__nickname">Alex Barden</div>
+                <div class="user__donate">
+                  <img src="../assets/money.svg" alt="money" /> +$7
+                </div>
+              </div>
+            </div>
+            <div class="testimonial__text">
+              "Here's a huge "thank-you" from New Hampshire - you allow me to
+              travel the world without ever leaving the comfort of my office
+              chair. Jammies on and coffee cup in hand, I am Phineas Fogg!!"
+            </div>
+          </li>
+          <li class="slider-ul__testimonial last-testimonial">
+            <div class="testimonial__user">
+              <img
+                class="avatar"
+                src="../assets/user4-avatar.png"
+                alt="user1-avatar"
+              />
+              <div class="nickname-donate">
+                <div class="user__nickname">Alene Ray</div>
+                <div class="user__donate">
+                  <img src="../assets/money.svg" alt="money" /> +$18
+                </div>
+              </div>
+            </div>
+            <div class="testimonial__text">
+              "Thank you for all the knowledge, education, pleasure and
+              happiness you have add to all our lives at no expense on our part.
+              My humble thanks and gratitude are being wished for all of you. I
+              want to thank you and feed the animals a small reward"
+            </div>
+          </li>
+        </ul>
+        <a class="slider__arow-right slider3" href=""> </a>
+      </nav>
+      <a href="">
+        <button class="section5__button">Leave feedback</button>
+      </a>
+    </section>
+    <footer>
+      <div class="footer__bg">
+        <div class="footer__content centre">
+          <nav class="nav__footer">
+            <a href="main-page.html">
+              <img class="logo" src="../assets/logo.svg" alt="logo" />
+            </a>
+            <a href="" class="footer-order__button"
+              ><button class="footer__button">Donate for volunteers</button></a
+            >
+            <ul class="footer__ul ul1">
+              <li class="ul__li1">
+                <a href="main-page.html">About</a>
+              </li>
+              <li>
+                <a href="map.html">Map</a>
+              </li>
+            </ul>
+            <ul class="footer__ul">
+              <li class="ul__li1">
+                <a href="error-404.html">Contact us</a>
+              </li>
+              <li>
+                <a href="">Feedback</a>
+              </li>
+            </ul>
+            <ul class="ul__link">
+              <li>
+                <a href="https://www.instagram.com">
+                  <img src="../assets/Insta.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <img src="../assets/Facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com">
+                  <img src="../assets/Twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com">
+                  <img src="../assets/Youtube.svg" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="content__lvl2 footer-order__logo-no-int">
+              <li>
+                <img
+                  title="Rolling Scopes School"
+                  class="logo-no-int logo-rsschool"
+                  src="../assets/logo-rsschool.svg"
+                  alt="logo-rsschool"
+                />
+              </li>
+              <li>
+                <img
+                  title="Yem Digital"
+                  class="logo-no-int"
+                  src="../assets/logo-disignschool.svg"
+                  alt="logo-designschool"
+                />
+              </li>
+            </ul>
+            <div class="copyrate content__lvl2 footer__text">
+              Copyright ©RSSchool and ©Yem Digital 2020 - 2021
+            </div>
+            <div class="content__lvl2 footer__text">Grigoreva Margarita</div>
+          </nav>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

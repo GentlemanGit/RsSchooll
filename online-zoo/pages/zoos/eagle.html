@@ -1,247 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eagle</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eagle</title>
-</head>
+  <body>
+    <link rel="stylesheet" href="../../normalize.css" />
+    <link rel="stylesheet" href="zoos-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <link rel="stylesheet" href="../../normalize.css">
-  <link rel="stylesheet" href="zoos-style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <header class="centre">
+      <nav>
+        <ul class="nav__header">
+          <li>
+            <a href="../main-page.html">
+              <img class="logo" src="../../assets/logo.svg" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="about" href="../main-page.html">About</a>
+          </li>
+          <li>
+            <a class="map" href="../map.html">Map</a>
+          </li>
+          <li>
+            <a class="zoos" href="">Zoos</a>
+          </li>
+          <li class="c-us">
+            <a class="contact-us" href="../error-404.html">Contact us</a>
+          </li>
+          <li>
+            <a
+              class="design"
+              href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a class="burger" href=""><button></button></a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Online Zoo</h1>
+    </header>
 
-  <header class="centre">
-    <nav>
-      <ul class="nav__ul">
-        <li>
-          <a href="../main-page.html">
-            <img class="logo" src="../../assets/logo.svg" alt="logo">
+    <main>
+      <aside class="aside-close"></aside>
+      <aside class="aside-open">
+        <div class="aside-content">
+          <a href="alligator.html">
+            <figure class="aside-animal alligator">
+              <div class="tooltip">
+                <img src="../../assets/map-alligator.png" alt="alligator" />
+                <div class="tooltiptext">
+                  <span> ALLIGATOR, Florida, USA </span>
+                </div>
+              </div>
+            </figure>
           </a>
-        </li>
-        <li>
-          <a class="about" href="../main-page.html">About</a>
-        </li>
-        <li>
-          <a class="map" href="../map.html">Map</a>
-        </li>
-        <li>
-          <a class="zoos" href="">Zoos</a>
-        </li>
-        <li>
-          <a class="contact-us" href="../error-404.html">Contact us</a>
-        </li>
-        <li>
-          <a class="design" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo">Design</a>
-        </li>
-      </ul>
-    </nav>
-    <h1>Online Zoo</h1>
-  </header>
-
-  <main>
-    <aside>
-      <div class="aside-content">
-        <a href="alligator.html">
-          <figure class="aside-animal alligator">
+          <a href="panda.html">
+            <figure class="aside-animal panda">
+              <div class="tooltip">
+                <img src="../../assets/map-panda.png" alt="panda" />
+                <div class="tooltiptext">
+                  <span> PANDA, China </span>
+                </div>
+              </div>
+            </figure>
+          </a>
+          <figure class="aside-animal eagle">
             <div class="tooltip">
-              <img src="../../assets/map-alligator.png" alt="alligator">
+              <img src="../../assets/map-eagle.png" alt="eagle" />
               <div class="tooltiptext">
-                <span>
-              ALLIGATOR, Florida, USA
-            </span>
+                <span> EAGLE, California, USA </span>
               </div>
             </div>
           </figure>
-        </a>
-        <a href="panda.html">
-          <figure class="aside-animal panda">
-            <div class="tooltip">
-              <img src="../../assets/map-panda.png" alt="panda">
-              <div class="tooltiptext">
-                <span>
-              PANDA, China
-          </span>
+          <a href="gorilla.html">
+            <figure class="aside-animal gorilla">
+              <div class="tooltip">
+                <img src="../../assets/map-gorilla.png" alt="gorilla" />
+                <div class="tooltiptext">
+                  <span> GORILLA, Eastern DRC </span>
+                </div>
+              </div>
+            </figure>
+          </a>
+          <a href="">
+            <figure class="feed">
+              <img src="../../assets/zoos-feed.svg" alt="feed" />
+            </figure>
+          </a>
+        </div>
+      </aside>
+      <div class="content centre">
+        <h2>Eagle</h2>
+        <div class="content__video centre">
+          <iframe
+            class="main-video"
+            src="https://www.youtube.com/embed/UmclL6funN8?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <a href=""><button class="btn-feed">Feed</button></a>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/UmclL6funN8?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/UmclL6funN8?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/UmclL6funN8?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+          <iframe
+            class="small-video"
+            src="https://www.youtube.com/embed/UmclL6funN8?"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <div class="content__text centre">
+          <div class="main-text">
+            <div>ZOO: Santa Catalina Island Conservancy (California, USA)</div>
+            <div>ENCLOSURE TYPE: Imitation of the natural environment</div>
+          </div>
+          <div class="sub-text">
+            <div class="sub-text1">
+              <div class="details">
+                <div class="details-all-text">
+                  <div class="summary__text">Population</div>
+                  <div class="details__text">
+                    Today, the population of bald eagles is in minimal danger.
+                    The total number of individuals is about two hundred
+                    thousand.
+                  </div>
+                </div>
+                <div class="details-arrow"></div>
+              </div>
+              <div class="details">
+                <div class="details-all-text">
+                  <div class="summary__text">Nutrition</div>
+                  <div class="details__text">
+                    Mostly bald eagles feed on fish or birds. They also hunt
+                    ground squirrels, rabbits, beavers, raccoons and muskrats.
+                    Eagles can also attack a baby seal. Eagles also feed on
+                    carrion, for example, they eat the corpses of large horned
+                    animals.
+                  </div>
+                </div>
+                <div class="details-arrow"></div>
               </div>
             </div>
-          </figure>
-        </a>
-        <figure class="aside-animal eagle">
-          <div class="tooltip">
-            <img src="../../assets/map-eagle.png" alt="eagle">
-            <div class="tooltiptext">
-              <span>
-              EAGLE, California, USA
-            </span>
-            </div>
-          </div>
-        </figure>
-        <a href="gorilla.html">
-          <figure class="aside-animal gorilla">
-            <div class="tooltip">
-              <img src="../../assets/map-gorilla.png" alt="gorilla">
-              <div class="tooltiptext">
-                <span>
-              GORILLA, Eastern DRC
-              </span>
+            <div>
+              <div class="details">
+                <div class="details-all-text">
+                  <div class="summary__text">Habitat</div>
+                  <div class="details__text">
+                    A large number of eagles live in the state of
+                    Minnesota-about 1300 pairs. In another US state, Florida,
+                    there are about 1,200 pairs. In Alaska, about 40 thousand
+                    individuals nest annually, after laying eggs, with the onset
+                    of cold weather, the eagles fly south.
+                  </div>
+                </div>
+                <div class="details-arrow"></div>
+              </div>
+              <div class="details">
+                <div class="details-all-text">
+                  <div class="summary__text">Interesting facts</div>
+                  <div class="details__text">
+                    Bald eagles can live a long time, with a longevity record of
+                    28 years in the wild and 36 years in captivity. The bald
+                    eagle is the national bird of the United States of America.
+                  </div>
+                </div>
+                <div class="details-arrow"></div>
               </div>
             </div>
-          </figure>
-        </a>
-        <a href="">
-          <figure class="feed">
-            <img src="../../assets/zoos-feed.svg" alt="feed">
-          </figure>
-        </a>
-      </div>
-    </aside>
-    <div class="content centre">
-      <h2>Eagle</h2>
-      <div class="content__video centre">
-        <iframe class="main-video" src="https://www.youtube.com/embed/UmclL6funN8?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/UmclL6funN8?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/UmclL6funN8?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/UmclL6funN8?" frameborder="0" allowfullscreen>
-        </iframe>
-        <iframe class="small-video" src="https://www.youtube.com/embed/UmclL6funN8?" frameborder="0" allowfullscreen>
-        </iframe>
-      </div>
-      <div class="content__text centre">
-        <div class="main-text">
-          <div>ZOO: Santa Catalina Island Conservancy (California, USA)</div>
-          <div>Enclosure type: Imitation of the natural environment</div>
-        </div>
-        <div class="sub-text">
-          <div class="sub-text1">
-            <details open>
-              <summary>
-                <div class="summary__text">Population</div>
-              </summary>
-              <div class="details__text">Today, the population of bald eagles is in minimal danger. The total number of individuals is about two hundred thousand.</div>
-            </details>
-            <details open>
-              <summary>
-                <div class="summary__text">Nutrition</div>
-              </summary>
-              <div class="details__text">Mostly bald eagles feed on fish or birds. They also hunt ground squirrels, rabbits, beavers, raccoons and muskrats. Eagles can also attack a baby seal. Eagles also feed on carrion, for example, they eat the corpses of large horned animals.</div>
-            </details>
-          </div>
-          <div>
-            <details open>
-              <summary>
-                <div class="summary__text">Habitat</div>
-              </summary>
-              <div class="details__text">A large number of eagles live in the state of Minnesota-about 1300 pairs. In another US state, Florida, there are about 1,200 pairs. In Alaska, about 40 thousand individuals nest annually, after laying eggs, with the onset of cold weather,
-                the eagles fly south.</div>
-            </details>
-            <details open>
-              <summary>
-                <div class="summary__text">Interesting facts</div>
-              </summary>
-              <div class="details__text">Bald eagles can live a long time, with a longevity record of 28 years in the wild and 36 years in captivity. The bald eagle is the national bird of the United States of America.</div>
-            </details>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="footer__bg">
-      <div class="footer__content centre">
-        <nav>
-          <ul class="nav__ul ">
-            <li>
-              <a href="../main-page.html">
-                <img class="logo" src="../../assets/logo.svg" alt="logo">
-              </a>
-            </li>
-            <li>
-              <a href=""><button class="footer__button">Donate for volunteers</button></a>
-            </li>
-            <li>
-              <ul class="ul__ul ul1">
-                <li class="ul__li1">
-                  <a href="../main-page.html">About</a>
-                </li>
-                <li>
-                  <a href="../map.html">Map</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="ul__ul">
-                <li class="ul__li1">
-                  <a href="../error-404.html">Contact us</a>
-                </li>
-                <li>
-                  <a href="">Feedback</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="ul__link">
-                <li>
-                  <a href="https://www.instagram.com">
-                    <img src="../../assets/Insta.svg" alt="instagram">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com">
-                    <img src="../../assets/Facebook.svg" alt="facebook">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com">
-                    <img src="../../assets/Twitter.svg" alt="twitter">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com">
-                    <img src="../../assets/Youtube.svg" alt="youtube">
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="content__lvl2">
-          <ul>
-            <li>
-              <img title="Rolling Scopes School" class="logo-no-int" src="../../assets/logo-rsschool.svg" alt="logo-rsschool">
-            </li>
-            <li>
-              <img title="Yem Digital" class="logo-no-int" src="../../assets/logo-disignschool.svg" alt="logo-designschool">
-            </li>
-          </ul>
-          <div class="copyrate">
-            Copyright ©RSSchool and ©Yem Digital 2020 - 2021
-          </div>
-          <div>
-            Grigoreva Margarita
-          </div>
+    <footer>
+      <div class="footer__bg">
+        <div class="footer__content centre">
+          <nav class="nav__footer">
+            <a href="../main-page.html">
+              <img class="logo" src="../../assets/logo.svg" alt="logo" />
+            </a>
+            <a href="" class="footer-order__button"
+              ><button class="footer__button">Donate for volunteers</button></a
+            >
+            <ul class="footer__ul ul1">
+              <li class="ul__li1">
+                <a href="../main-page.html">About</a>
+              </li>
+              <li>
+                <a href="../map.html">Map</a>
+              </li>
+            </ul>
+            <ul class="footer__ul">
+              <li class="ul__li1">
+                <a href="../error-404.html">Contact us</a>
+              </li>
+              <li>
+                <a href="">Feedback</a>
+              </li>
+            </ul>
+            <ul class="ul__link">
+              <li>
+                <a href="https://www.instagram.com">
+                  <img src="../../assets/Insta.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <img src="../../assets/Facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com">
+                  <img src="../../assets/Twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com">
+                  <img src="../../assets/Youtube.svg" alt="youtube" />
+                </a>
+              </li>
+            </ul>
+
+            <ul class="content__lvl2 footer-order__logo-no-int">
+              <li>
+                <img
+                  title="Rolling Scopes School"
+                  class="logo-no-int logo-rsschool"
+                  src="../../assets/logo-rsschool.svg"
+                  alt="logo-rsschool"
+                />
+              </li>
+              <li>
+                <img
+                  title="Yem Digital"
+                  class="logo-no-int"
+                  src="../../assets/logo-disignschool.svg"
+                  alt="logo-designschool"
+                />
+              </li>
+            </ul>
+            <div class="copyrate content__lvl2 footer__text">
+              Copyright ©RSSchool and ©Yem Digital 2020 - 2021
+            </div>
+            <div class="content__lvl2 footer__text">Grigoreva Margarita</div>
+          </nav>
         </div>
       </div>
-    </div>
-  </footer>
-  <style>
-    .eagle img {
-      pointer-events: none;
-      border: 4px solid #70CB0E;
-    }
-    
-    .eagle .tooltiptext {
-      visibility: visible;
-    }
-  </style>
-</body>
+    </footer>
+    <style>
+      .eagle img {
+        pointer-events: none;
+        border: 4px solid #70cb0e;
+      }
 
+      .eagle .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+  </body>
 </html>

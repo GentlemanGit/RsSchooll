@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error 404</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Error 404</title>
-</head>
+  <body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <figure>
+      <img src="../assets/error-404.svg" alt="error-404" />
+      <figcaption>
+        <a href="main-page.html">Go back and try a different link</a>
+      </figcaption>
+    </figure>
 
-<body>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <figure>
-    <img src="../assets/error-404.svg" alt="error-404">
-    <figcaption>
-      <a href="main-page.html">Go back and try a different link</a>
-    </figcaption>
-  </figure>
+    <style>
+      figure {
+        display: flex;
+        justify-content: center;
+        margin: 190px auto;
+        align-items: flex-end;
+      }
 
-  <style>
-    figure {
-      display: flex;
-      justify-content: center;
-      margin: 10% auto;
-      margin-bottom: 0;
-      align-items: flex-end;
-    }
-    
-    figcaption {
-      position: absolute;
-      font-family: 'Bebas Neue', cursive;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 20px;
-      text-align: center;
-    }
-    
-    a {
-      color: #59C3FB;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      color: #0ba9fd;
-    }
-  </style>
-</body>
+      figcaption {
+        position: absolute;
+        font-family: "Bebas Neue", cursive;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+      }
 
+      a {
+        color: #59c3fb;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0ba9fd;
+      }
+      @media screen and (max-width: 1400px) {
+        figure {
+          margin: 50px auto;
+        }
+        @media screen and (max-width: 900px) {
+          figure {
+            margin: 110px auto;
+          }
+          img {
+            height: 582px;
+            width: 550px;
+          }
+        }
+        @media screen and (max-width: 600px) {
+          figure {
+            margin: 136px auto;
+          }
+          img {
+            height: 296px;
+            width: 260px;
+          }
+          figcaption {
+        font-size: 16px;
+        line-height: 16px;
+        }
+      }
+    }
+    </style>
+  </body>
 </html>

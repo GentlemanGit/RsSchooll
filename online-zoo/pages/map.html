@@ -1,196 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Map</title>
-</head>
+  <body>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="map-style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <link rel="stylesheet" href="../normalize.css">
-  <link rel="stylesheet" href="map-style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <header class="centre">
+      <nav>
+        <ul class="nav__header">
+          <li>
+            <a href="main-page.html">
+              <img class="logo" src="../assets/logo.svg" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="about" href="main-page.html">About</a>
+          </li>
+          <li>
+            <a class="map" href="">Map</a>
+          </li>
+          <li>
+            <a class="zoos" href="zoos/alligator.html">Zoos</a>
+          </li>
+          <li class="c-us">
+            <a class="contact-us" href="error-404.html">Contact us</a>
+          </li>
+          <li>
+            <a
+              class="design"
+              href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a class="burger" href=""><button></button></a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Online Zoo</h1>
+    </header>
 
-  <header class="centre">
-    <nav>
-      <ul class="nav__ul">
-        <li>
-          <a href="main-page.html">
-            <img class="logo" src="../assets/logo.svg" alt="logo">
-          </a>
-        </li>
-        <li>
-          <a class="about" href="main-page.html">About</a>
-        </li>
-        <li>
-          <a class="map" href="">Map</a>
-        </li>
-        <li>
-          <a class="zoos" href="zoos/alligator.html">Zoos</a>
-        </li>
-        <li>
-          <a class="contact-us" href="error-404.html">Contact us</a>
-        </li>
-        <li>
-          <a class="design" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo">Design</a>
-        </li>
-      </ul>
-    </nav>
-    <h1>Online Zoo</h1>
-  </header>
-
-  <main>
-    <div class="main-content centre">
-      <figure class="map-animal eagle">
-        <figcaption>EAGLE</figcaption>
-        <div class="tooltip">
-          <a href="zoos/eagle.html">
-            <img src="../assets/map-eagle.png" alt="eagle">
-          </a>
-          <div class="tooltiptext">
-            <span>
-              EAGLE, California, USA
-            </span>
+    <main>
+      <div class="main-content centre">
+        <figure class="map-animal eagle">
+          <figcaption>EAGLE</figcaption>
+          <div class="tooltip">
+            <a href="zoos/eagle.html">
+              <img src="../assets/map-eagle.png" alt="eagle" />
+            </a>
+            <div class="tooltiptext">
+              <span> EAGLE, California, USA </span>
+            </div>
+            <div class="smal-tooltip">
+              <span>EAGLE,</span>
+              <span> California, USA </span>
+              <a href="zoos/eagle.html"><button>Watch online</button></a>
+            </div>
           </div>
-        </div>
-      </figure>
-      <div class="map-text usa">USA</div>
-      <figure class="map-animal alligator">
-        <div class="tooltip">
-          <a href="zoos/alligator.html">
-            <img src="../assets/map-alligator.png" alt="alligator">
-          </a>
-          <div class="tooltiptext">
-            <span>
-              ALLIGATOR, Florida, USA
-            </span>
+        </figure>
+        <div class="map-text usa">USA</div>
+        <figure class="map-animal alligator">
+          <div class="tooltip">
+            <a href="zoos/alligator.html">
+              <img src="../assets/map-alligator.png" alt="alligator" />
+            </a>
+            <div class="tooltiptext">
+              <span> ALLIGATOR, Florida, USA </span>
+            </div>
+            <div class="smal-tooltip">
+              <span>ALLIGATOR,</span>
+              <span> Florida, USA</span>
+              <a href="zoos/alligator.html"><button>Watch online</button></a>
+            </div>
           </div>
-        </div>
-        <figcaption>ALLIGATOR</figcaption>
-      </figure>
+          <figcaption>ALLIGATOR</figcaption>
+        </figure>
 
-      <div class="map-text drc">Eastern DRC
+        <div class="map-text drc">Eastern DRC</div>
+        <figure class="map-animal gorilla">
+          <div class="tooltip">
+            <a href="zoos/gorilla.html">
+              <img src="../assets/map-gorilla.png" alt="gorilla" />
+            </a>
+            <div class="tooltiptext">
+              <span> GORILLA, Eastern DRC </span>
+            </div>
+            <div class="smal-tooltip">
+              <span>GORILLA,</span>
+              <span> Eastern DRC </span>
+              <a href="zoos/gorilla.html"><button>Watch online</button></a>
+            </div>
+          </div>
+          <figcaption>GORILLA</figcaption>
+        </figure>
+        <div class="map-text china">China</div>
+        <figure class="map-animal panda">
+          <div class="tooltip">
+            <a href="zoos/panda.html">
+              <img src="../assets/map-panda.png" alt="panda" />
+            </a>
+            <div class="tooltiptext">
+              <span> PANDA, China </span>
+            </div>
+            <div class="smal-tooltip">
+              <span>PANDA,</span>
+              <span> China</span>
+              <a href="zoos/panda.html"><button>Watch online</button></a>
+            </div>
+          </div>
+          <figcaption>PANDA BEAR</figcaption>
+        </figure>
       </div>
-      <figure class="map-animal gorilla">
-        <div class="tooltip">
-          <a href="zoos/gorilla.html">
-            <img src="../assets/map-gorilla.png" alt="gorilla">
-          </a>
-          <div class="tooltiptext">
-            <span>
-              GORILLA, Eastern DRC
-          </span>
-          </div>
-        </div>
-        <figcaption>GORILLA</figcaption>
-      </figure>
-      <div class="map-text china">China
+      <div class="map-button">
+        <button class="map-button__minus">-</button>
+        <button class="map-button__plus">+</button>
       </div>
-      <figure class="map-animal panda">
-        <div class="tooltip">
-          <a href="zoos/panda.html">
-            <img src="../assets/map-panda.png" alt="panda">
-          </a>
-          <div class="tooltiptext">
-            <span>
-              PANDA, China
-          </span>
-          </div>
-        </div>
-        <figcaption>PANDA BEAR</figcaption>
-      </figure>
+    </main>
 
-    </div>
-    <div class="map-button">
-      <button class="map-button__minus">-</button>
-      <button class="map-button__plus">+</button>
-    </div>
-  </main>
+    <footer>
+      <div class="footer__bg">
+        <div class="footer__content centre">
+          <nav class="nav__footer">
+            <a href="main-page.html">
+              <img class="logo" src="../assets/logo.svg" alt="logo" />
+            </a>
+            <a href="" class="footer-order__button"
+              ><button class="footer__button">Donate for volunteers</button></a
+            >
+            <ul class="footer__ul ul1">
+              <li class="ul__li1">
+                <a href="main-page.html">About</a>
+              </li>
+              <li>
+                <a href="map.html">Map</a>
+              </li>
+            </ul>
+            <ul class="footer__ul">
+              <li class="ul__li1">
+                <a href="error-404.html">Contact us</a>
+              </li>
+              <li>
+                <a href="">Feedback</a>
+              </li>
+            </ul>
+            <ul class="ul__link">
+              <li>
+                <a href="https://www.instagram.com">
+                  <img src="../assets/Insta.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com">
+                  <img src="../assets/Facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com">
+                  <img src="../assets/Twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com">
+                  <img src="../assets/Youtube.svg" alt="youtube" />
+                </a>
+              </li>
+            </ul>
 
-  <footer>
-    <div class="footer__bg">
-      <div class="footer__content centre">
-        <nav>
-          <ul class="nav__ul ">
-            <li>
-              <a href="main-page.html">
-                <img class="logo" src="../assets/logo.svg" alt="logo">
-              </a>
-            </li>
-            <li>
-              <a href=""><button class="footer__button">Donate for volunteers</button></a>
-            </li>
-            <li>
-              <ul class="ul__ul ul1">
-                <li class="ul__li1">
-                  <a href="main-page.html">About</a>
-                </li>
-                <li>
-                  <a href="map.html">Map</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="ul__ul">
-                <li class="ul__li1">
-                  <a href="error-404.html">Contact us</a>
-                </li>
-                <li>
-                  <a href="">Feedback</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="ul__link">
-                <li>
-                  <a href="https://www.instagram.com">
-                    <img src="../assets/Insta.svg" alt="instagram">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com">
-                    <img src="../assets/Facebook.svg" alt="facebook">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com">
-                    <img src="../assets/Twitter.svg" alt="twitter">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com">
-                    <img src="../assets/Youtube.svg" alt="youtube">
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <div class="content__lvl2">
-          <ul>
-            <li>
-              <img title="Rolling Scopes School" class="logo-no-int" src="../assets/logo-rsschool.svg" alt="logo-rsschool">
-            </li>
-            <li>
-              <img title="Yem Digital" class="logo-no-int" src="../assets/logo-disignschool.svg" alt="logo-designschool">
-            </li>
-          </ul>
-          <div class="copyrate">
-            Copyright ©RSSchool and ©Yem Digital 2020 - 2021
-          </div>
-          <div>
-            Grigoreva Margarita
-          </div>
+            <ul class="content__lvl2 footer-order__logo-no-int">
+              <li>
+                <img
+                  title="Rolling Scopes School"
+                  class="logo-no-int logo-rsschool"
+                  src="../assets/logo-rsschool.svg"
+                  alt="logo-rsschool"
+                />
+              </li>
+              <li>
+                <img
+                  title="Yem Digital"
+                  class="logo-no-int"
+                  src="../assets/logo-disignschool.svg"
+                  alt="logo-designschool"
+                />
+              </li>
+            </ul>
+            <div class="copyrate content__lvl2 footer__text">
+              Copyright ©RSSchool and ©Yem Digital 2020 - 2021
+            </div>
+            <div class="content__lvl2 footer__text">Grigoreva Margarita</div>
+          </nav>
         </div>
       </div>
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>
