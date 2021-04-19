@@ -750,8 +750,6 @@ a:hover {
     margin-right: 0;
   }
   .background-section1 {
-    background: url(../assets/background-panda-320px.png),
-      radial-gradient(71.89% 152.21% at 40.1% 50%, #b5e6ff 0%, #59c3fb 100%);
     background-position: left;
     background-repeat: no-repeat;
   }
