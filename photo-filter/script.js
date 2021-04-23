@@ -62,3 +62,14 @@ function changeImage() {
   i++;
 }
 btn.addEventListener("click", changeImage);
+
+/*filters value */
+const filterIn = document.querySelectorAll("input");
+const filterOut = document.querySelectorAll("output");
+let filterVal;
+filterIn.forEach((f, i) => {
+  f.addEventListener("input", () => {
+    filterOut[i].value = f.value;
+    filterVal = f.value;
+  });
+});
