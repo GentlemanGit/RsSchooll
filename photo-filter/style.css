@@ -168,6 +168,7 @@ output {
   --saturate: 100%;
   --hue: 0deg;
 }
+canvas,
 img {
   height: 100%;
   width: 100%;
