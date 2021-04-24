@@ -39,7 +39,7 @@ const images = [
 let i = 0;
 let base = baseDay;
 const imgHtml = document.querySelector("img");
-const btn = document.querySelector(".btn-next");
+const btnNext = document.querySelector(".btn-next");
 
 function changeImage() {
   let now = new Date().getHours();
@@ -61,15 +61,35 @@ function changeImage() {
   imgHtml.src = imageSrc;
   i++;
 }
-btn.addEventListener("click", changeImage);
+btnNext.addEventListener("click", changeImage);
 
-/*filters value */
+/*Filters value & change Filters */
 const filterIn = document.querySelectorAll("input");
 const filterOut = document.querySelectorAll("output");
-let filterVal;
-filterIn.forEach((f, i) => {
-  f.addEventListener("input", () => {
-    filterOut[i].value = f.value;
-    filterVal = f.value;
+
+filterIn.forEach((thisImput, i) => {
+  thisImput.addEventListener("input", () => {
+    filterOut[i].value = thisImput.value;
+    const size = thisImput.dataset.sizing || "";
+    document.documentElement.style.setProperty(
+      `--${thisImput.name}`,
+      thisImput.value + size
+    );
   });
 });
+/*Reset Filters*/
+const btnReset = document.querySelector(".btn-reset");
+
+function resetFilters() {
+  filterIn.forEach((thisImput, i) => {
+    const resetValue = thisImput.dataset.rvalue;
+    const size = thisImput.dataset.sizing || "";
+    filterOut[i].value = resetValue;
+    thisImput.value = resetValue;
+    document.documentElement.style.setProperty(
+      `--${thisImput.name}`,
+      resetValue + size
+    );
+  });
+}
+btnReset.addEventListener("click", resetFilters);
