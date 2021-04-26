@@ -74,6 +74,7 @@ fileInput.addEventListener("change", () => {
     drawImage();
   };
   reader.readAsDataURL(file);
+  fileInput.value = "";
 });
 
 /*Filters value & change Filters */
