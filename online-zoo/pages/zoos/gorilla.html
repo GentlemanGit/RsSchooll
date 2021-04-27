@@ -203,6 +203,45 @@
         </div>
       </div>
     </main>
+    <div class="popup">
+      <div class="popup-content">
+        <button class="btn-close"></button>
+        <div class="popup-first">
+          <select class="animal">
+            <option>Alligator</option>
+            <option>Panda</option>
+            <option>Eagle</option>
+            <option selected>Gorilla</option>
+          </select>
+          <input
+            class="amount"
+            type="number"
+            placeholder="Amout"
+            min="0"
+            max="9999"
+          />
+          <select class="currency">
+            <option selected>USD</option>
+            <option>EUR</option>
+          </select>
+          <textarea
+            class="your-text"
+            maxlength="280"
+            placeholder="Your text here"
+          ></textarea>
+          <button class="btn-next">Next</button>
+        </div>
+        <div class="popup-second">
+          <input class="card-number" type="number" placeholder="Сard Number" />
+          <input class="card-date mm" type="number" placeholder="MM" />
+          <input class="card-date yy" type="number" placeholder="YY" />
+          <input class="card-name" type="text" placeholder="Сardholder Name" />
+          <input class="card-cvc" type="number" placeholder="CVC" />
+          <button class="btn-donate">Donate</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup-bg"></div>
     <footer>
       <div class="footer__bg">
         <div class="footer__content centre">
@@ -210,9 +249,9 @@
             <a href="../main-page.html">
               <img class="logo" src="../../assets/logo.svg" alt="logo" />
             </a>
-            <a href="" class="footer-order__button"
-              ><button class="footer__button">Donate for volunteers</button></a
-            >
+            <button class="footer__button footer-order__button">
+              Donate for volunteers
+            </button>
             <ul class="footer__ul ul1">
               <li class="ul__li1">
                 <a href="../main-page.html">About</a>
@@ -288,5 +327,6 @@
         visibility: visible;
       }
     </style>
+    <script src="../../script.js"></script>
   </body>
 </html>

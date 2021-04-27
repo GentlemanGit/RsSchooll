@@ -404,7 +404,7 @@ footer .footer__ul li {
 .logo-no-int {
   margin-right: 55px;
 }
-a button:hover,
+button:hover,
 .ul__link img:hover,
 .logo:hover {
   cursor: pointer;
@@ -424,6 +424,138 @@ a:hover {
   margin-top: 20px;
   width: 300px;
   display: none;
+}
+.popup-bg {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+}
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 340px;
+  width: 630px;
+  z-index: 10;
+  background: white;
+  display: none;
+}
+.popup-content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.popup-first {
+  margin: 0 auto;
+  width: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popup-second {
+  margin-left: 76px;
+  width: 468px;
+  height: 390px;
+  display: none;
+}
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 27px;
+  width: 27px;
+  padding: 0;
+  background: url(../../assets/popup-close.svg) no-repeat center;
+}
+.animal {
+  margin-top: 60px;
+  width: 470px;
+  height: 39px;
+  text-align-last: center;
+  text-align: center;
+  -webkit-appearance: none;
+  background: url(../assets/select-arrow.svg) #dff5b0 no-repeat 98% 50%;
+  cursor: pointer;
+}
+.amount,
+.currency,
+.your-text {
+  margin-top: 8px;
+}
+.amount {
+  width: 303px;
+  height: 33px;
+}
+.currency {
+  height: 39px;
+  width: 151px;
+  margin-left: 8px;
+  text-align-last: center;
+  text-align: center;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.your-text {
+  width: 470px;
+  height: 85px;
+  resize: none;
+}
+.btn-donate,
+.btn-next {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  height: 40px;
+}
+
+.popup-second input[type="number"]::-webkit-outer-spin-button,
+.popup-second input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.card-number {
+  margin-top: 85px;
+  height: 33px;
+  width: 298px;
+  text-align-last: center;
+  text-align: center;
+  margin-right: 198px;
+}
+.card-date {
+  margin-top: 8px;
+  height: 33px;
+  width: 72px;
+  text-align-last: center;
+  text-align: center;
+  margin-right: 5px;
+}
+.card-name {
+  margin-top: 8px;
+  height: 33px;
+  width: 298px;
+  text-align-last: center;
+  text-align: center;
+}
+.card-cvc {
+  position: relative;
+  bottom: 7px;
+  margin-left: 83px;
+  height: 29px;
+  width: 67px;
+  text-align-last: center;
+  text-align: center;
+}
+.btn-donate {
+  margin: 91px auto 0;
 }
 
 @media screen and (max-width: 1589px) {
