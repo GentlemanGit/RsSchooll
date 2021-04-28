@@ -239,6 +239,24 @@
           <input class="card-cvc" type="number" placeholder="CVC" />
           <button class="btn-donate">Donate</button>
         </div>
+        <div class="popup-third">
+          <form action="">
+            <input class="user-name" type="text" placeholder="Name" required />
+            <input
+              class="user-email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="feedback-text"
+              maxlength="300"
+              placeholder="Your text here (300 max)"
+              required
+            ></textarea>
+            <button class="btn-submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
     <div class="popup-bg"></div>
@@ -265,7 +283,7 @@
                 <a href="../error-404.html">Contact us</a>
               </li>
               <li>
-                <a href="">Feedback</a>
+                <a class="feedback" href="" onclick="return false">Feedback</a>
               </li>
             </ul>
             <ul class="ul__link">

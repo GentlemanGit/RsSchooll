@@ -10,6 +10,7 @@ const popup2 = document.querySelector(".popup-second");
 btnDFV.addEventListener("click", () => {
   popup.style.display = "block";
   popupBg.style.display = "block";
+  document.body.style.overflow = "hidden";
 });
 /*first popup*/
 /*amount*/
@@ -34,7 +35,7 @@ function displaySecondPopup() {
     if (title.textContent != "Map" && title.textContent != "online-zoo")
       popup.style.background =
         "url(../../assets/popup-pay.svg) white no-repeat center";
-  }
+  } else alert("Enter the amount!");
 }
 
 /*second popup*/
@@ -85,8 +86,8 @@ function donate() {
     popup.style.background = "white";
     popup.style.display = "none";
     popupBg.style.display = "none";
-    alert("Thank you for your donation!");
-  }
+    alert("Thank you for your donation!)");
+  } else alert("Enter correct card details!");
 }
 /*close popup*/
 const btnClose = document.querySelector(".btn-close");
@@ -100,4 +101,43 @@ function popupOff() {
   popup.style.background = "white";
   popup.style.display = "none";
   popupBg.style.display = "none";
+  document.body.style.overflow = "auto";
 }
+/*Feedback popup*/
+const feedbackLink = document.querySelector(".feedback");
+const popup3 = document.querySelector(".popup-third");
+feedbackLink.addEventListener("click", () => {
+  popup.style.display = "block";
+  popupBg.style.display = "block";
+  document.body.style.overflow = "hidden";
+  popup1.style.display = "none";
+  popup.style.height = "436px";
+  popup3.style.display = "flex";
+});
+/*Valid */
+const userName = document.querySelector(".user-name");
+const userEmail = document.querySelector(".user-email");
+const userFeed = document.querySelector(".feedback-text");
+const btnSubmit = document.querySelector(".btn-submit");
+
+function validate() {
+  if (
+    userName.validity.valid &&
+    userEmail.validity.valid &&
+    userFeed.validity.valid
+  ) {
+    btnSubmit.style.backgroundColor = "#70cb0e";
+  }
+}
+
+userName.addEventListener("input", () => {
+  validate();
+});
+
+userEmail.addEventListener("input", () => {
+  validate();
+});
+
+userFeed.addEventListener("input", () => {
+  validate();
+});
