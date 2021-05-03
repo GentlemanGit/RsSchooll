@@ -68,39 +68,17 @@
     </section>
     <section class="section2">
       <div class="section2__title">How it works</div>
-      <nav class="section2__slider">
-        <ul class="section2__slider-img">
-          <li>
-            <a href="">
-              <img class="eagle" src="../assets/eagle.png" alt="eagle" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img class="tiger" src="../assets/tiger.png" alt="tigre" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img class="panda" src="../assets/panda.png" alt="panda" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img class="monkey" src="../assets/monkey.png" alt="monkey" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img
-                class="elephant"
-                src="../assets/elephant.png"
-                alt="elephant"
-              />
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="slider__animals">
+        <nav class="section2__slider">
+          <ul class="section2__slider-img">
+            <li class="animal" data-pos="-2"></li>
+            <li class="animal" data-pos="-1"></li>
+            <li class="animal" data-pos="0"></li>
+            <li class="animal" data-pos="1"></li>
+            <li class="animal" data-pos="2"></li>
+          </ul>
+        </nav>
+      </div>
       <div class="section2__text">
         The application Оnline zoo will allow you to watch zoos' and nature
         reserves' inhabitants in live. Currently, under video-surveillance are
@@ -436,6 +414,7 @@
         </div>
       </div>
     </footer>
-    <script src="../main-script.js"></script>
+    <script src="popup.js"></script>
+    <script src="main-carousel.js"></script>
   </body>
 </html>
