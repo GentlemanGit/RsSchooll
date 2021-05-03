@@ -295,9 +295,7 @@ h2 {
   transition-duration: 1s;
 }
 .details-all-text {
-  margin-left: 15px;
   height: 102px;
-  width: 470px;
   transition-property: height;
   transition-duration: 1s;
   overflow-y: hidden;
