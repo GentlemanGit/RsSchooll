@@ -121,7 +121,7 @@ aside {
 }
 
 .aside-content {
-  margin-top: 13px;
+  padding-top: 13px;
   height: 352px;
   width: 104px;
   display: flex;
@@ -289,11 +289,18 @@ h2 {
   text-align: left;
   height: 102px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  transition-property: height;
+  transition-duration: 1s;
 }
 .details-all-text {
+  margin-left: 15px;
   height: 102px;
+  width: 470px;
+  transition-property: height;
+  transition-duration: 1s;
+  overflow-y: hidden;
 }
 .details__text {
   margin-top: 7px;
@@ -302,12 +309,15 @@ h2 {
 }
 .summary__text {
   text-transform: uppercase;
+  cursor: pointer;
 }
 .details-arrow {
   width: 45px;
   height: 45px;
   background-image: url(../../assets/zoos-arow-close.svg);
-  margin-left: 15px;
+  transition-property: transform;
+  transition-duration: 1s;
+  cursor: pointer;
 }
 
 footer {
@@ -479,6 +489,7 @@ a:hover {
 .animal {
   margin-top: 60px;
   width: 470px;
+  padding: 0 200px;
   height: 39px;
   text-align-last: center;
   text-align: center;
