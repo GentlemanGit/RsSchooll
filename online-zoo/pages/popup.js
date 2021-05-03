@@ -118,13 +118,7 @@ function FeedbackPopup() {
   popup.style.height = "436px";
   popup3.style.display = "flex";
 }
-const forma = document.querySelector(".feedback-form");
-forma.addEventListener("submit", (e) => {
-  e.preventDefault();
-  popup.style.display = "none";
-  document.body.style.overflow = "auto";
-  popupBg.style.display = "none";
-});
+
 /*Valid */
 const userName = document.querySelector(".user-name");
 const userEmail = document.querySelector(".user-email");
@@ -151,4 +145,15 @@ userEmail.addEventListener("input", () => {
 
 userFeed.addEventListener("input", () => {
   validate();
+});
+/* not rebut page */
+const forma = document.querySelector(".feedback-form");
+forma.addEventListener("submit", (e) => {
+  e.preventDefault();
+  popup.style.display = "none";
+  document.body.style.overflow = "auto";
+  popupBg.style.display = "none";
+  userName.value = "";
+  userEmail.value = "";
+  userFeed.value = "";
 });
