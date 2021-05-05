@@ -68,39 +68,17 @@
     </section>
     <section class="section2">
       <div class="section2__title">How it works</div>
-      <nav class="section2__slider">
-        <ul class="section2__slider-img">
-          <li>
-            <a href="">
-              <img class="eagle" src="../assets/eagle.png" alt="eagle" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img class="tiger" src="../assets/tiger.png" alt="tigre" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img class="panda" src="../assets/panda.png" alt="panda" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img class="monkey" src="../assets/monkey.png" alt="monkey" />
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img
-                class="elephant"
-                src="../assets/elephant.png"
-                alt="elephant"
-              />
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="slider__animals">
+        <nav class="section2__slider">
+          <ul class="section2__slider-img">
+            <li class="animal" data-pos="-2"></li>
+            <li class="animal" data-pos="-1"></li>
+            <li class="animal" data-pos="0"></li>
+            <li class="animal" data-pos="1"></li>
+            <li class="animal" data-pos="2"></li>
+          </ul>
+        </nav>
+      </div>
       <div class="section2__text">
         The application Оnline zoo will allow you to watch zoos' and nature
         reserves' inhabitants in live. Currently, under video-surveillance are
@@ -118,9 +96,9 @@
     <section class="section3">
       <div class="section3__title">Pets in zoo</div>
       <nav class="section3__slider centre">
-        <a class="slider__arow-left" href=""> </a>
+        <div class="slider__arow-left" href=""></div>
         <ul class="section3__slider-img">
-          <li>
+          <li class="slider-item">
             <a href="zoos/panda.html">
               <figure class="zoo-panda">
                 <figcaption class="slider-img__img-text">
@@ -128,8 +106,13 @@
                 </figcaption>
               </figure>
             </a>
+            <figure class="zoo-polar-bear">
+              <figcaption class="slider-img__img-text">
+                Polar bear, Canada
+              </figcaption>
+            </figure>
           </li>
-          <li>
+          <li class="slider-item">
             <a href="zoos/alligator.html">
               <figure class="zoo-aligator">
                 <figcaption class="slider-img__img-text">
@@ -137,31 +120,6 @@
                 </figcaption>
               </figure>
             </a>
-          </li>
-          <li>
-            <a href="zoos/gorilla.html">
-              <figure class="zoo-gorila">
-                <figcaption class="slider-img__img-text">
-                  Gorilla, Eastern DRC
-                </figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <figure class="zoo-elephant">
-              <figcaption class="slider-img__img-text">
-                Elephant, South Africa
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="zoo-polar-bear">
-              <figcaption class="slider-img__img-text">
-                Polar bear, Canada
-              </figcaption>
-            </figure>
-          </li>
-          <li>
             <a href="zoos/eagle.html">
               <figure class="zoo-eagle">
                 <figcaption class="slider-img__img-text">
@@ -170,20 +128,32 @@
               </figure>
             </a>
           </li>
-          <li>
+          <li class="slider-item">
+            <a href="zoos/gorilla.html">
+              <figure class="zoo-gorila">
+                <figcaption class="slider-img__img-text">
+                  Gorilla, Eastern DRC
+                </figcaption>
+              </figure>
+            </a>
             <figure class="zoo-owl">
               <figcaption class="slider-img__img-text">
                 Arctic snowy owl, Alaska
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="slider-item">
+            <figure class="zoo-elephant">
+              <figcaption class="slider-img__img-text">
+                Elephant, South Africa
+              </figcaption>
+            </figure>
             <figure class="zoo-penguin">
               <figcaption class="slider-img__img-text">Penguin, USA</figcaption>
             </figure>
           </li>
         </ul>
-        <a class="slider__arow-right" href=""> </a>
+        <div class="slider__arow-right" href=""></div>
       </nav>
       <a href="map.html">
         <button class="section3__button">Choose your favorite</button>
@@ -213,7 +183,7 @@
     <section class="section5">
       <div class="section5__title">Testimonials</div>
       <nav class="section5__slider centre">
-        <a class="slider__arow-left slider3" href=""> </a>
+        <div class="slider__arow-left slider3"></div>
         <ul class="slider-ul">
           <li class="slider-ul__testimonial">
             <div class="testimonial__user">
@@ -299,12 +269,67 @@
             </div>
           </li>
         </ul>
-        <a class="slider__arow-right slider3" href=""> </a>
+        <div class="slider__arow-right slider3"></div>
       </nav>
-      <a href="">
-        <button class="section5__button">Leave feedback</button>
-      </a>
+      <button class="section5__button">Leave feedback</button>
     </section>
+    <div class="popup">
+      <div class="popup-content">
+        <button class="btn-close"></button>
+        <div class="popup-first">
+          <select class="popup-animal">
+            <option selected>Alligator</option>
+            <option>Panda</option>
+            <option>Eagle</option>
+            <option>Gorilla</option>
+          </select>
+          <input
+            class="amount"
+            type="number"
+            placeholder="Amout"
+            min="0"
+            max="9999"
+          />
+          <select class="currency">
+            <option selected>USD</option>
+            <option>EUR</option>
+          </select>
+          <textarea
+            class="your-text"
+            maxlength="280"
+            placeholder="Your text here"
+          ></textarea>
+          <button class="btn-next">Next</button>
+        </div>
+        <div class="popup-second">
+          <input class="card-number" type="number" placeholder="Сard Number" />
+          <input class="card-date mm" type="number" placeholder="MM" />
+          <input class="card-date yy" type="number" placeholder="YY" />
+          <input class="card-name" type="text" placeholder="Сardholder Name" />
+          <input class="card-cvc" type="number" placeholder="CVC" />
+          <button class="btn-donate">Donate</button>
+        </div>
+        <div class="popup-third">
+          <form class="feedback-form" action="">
+            <input class="user-name" type="text" placeholder="Name" required />
+            <input
+              class="user-email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="feedback-text"
+              maxlength="300"
+              placeholder="Your text here (300 max)"
+              required
+            ></textarea>
+            <button class="btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup-bg"></div>
     <footer>
       <div class="footer__bg">
         <div class="footer__content centre">
@@ -312,9 +337,10 @@
             <a href="main-page.html">
               <img class="logo" src="../assets/logo.svg" alt="logo" />
             </a>
-            <a href="" class="footer-order__button"
-              ><button class="footer__button">Donate for volunteers</button></a
-            >
+            <button class="footer__button footer-order__button">
+              Donate for volunteers
+            </button>
+
             <ul class="footer__ul ul1">
               <li class="ul__li1">
                 <a href="main-page.html">About</a>
@@ -328,7 +354,7 @@
                 <a href="error-404.html">Contact us</a>
               </li>
               <li>
-                <a href="">Feedback</a>
+                <a class="feedback" href="" onclick="return false">Feedback</a>
               </li>
             </ul>
             <ul class="ul__link">
@@ -380,5 +406,9 @@
         </div>
       </div>
     </footer>
+    <script src="popup.js"></script>
+    <script src="main-carousel.js"></script>
+    <script src="carousel-zoo.js"></script>
+    <script src="carousel-testimonials.js"></script>
   </body>
 </html>

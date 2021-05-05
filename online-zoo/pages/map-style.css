@@ -11,6 +11,8 @@ header {
   display: flex;
   align-items: center;
   max-width: 1160px;
+  position: relative;
+  z-index: 2;
 }
 
 .nav__header {
@@ -90,13 +92,19 @@ h1 {
 }
 body {
   background: #a7e1ff;
+  overflow-x: hidden;
 }
-
 main {
   min-height: calc(100vh - 342px);
+  margin-bottom: -82px;
 }
 
-.main-content {
+.zoom-field {
+  margin: 100px auto -82px;
+  height: 745px;
+  width: 1165px;
+}
+.all-map {
   display: flex;
   justify-content: center;
   background: url(../assets/map.svg);
@@ -104,9 +112,7 @@ main {
   width: 1160px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 100px;
-  margin-bottom: -82px;
-  overflow: hidden;
+  position: absolute;
 }
 
 .map-animal {
@@ -197,23 +203,32 @@ main {
   bottom: 20px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   margin-bottom: 30px;
+  z-index: 3;
+}
+.map-button__center {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: gray;
+  margin-bottom: 20px;
 }
 
 .map-button button {
   padding: 0;
   width: 32px;
   height: 40px;
-  background-color: #ffffff;
 }
 
 .map-button__minus {
   border-radius: 4px 4px 0 0;
   border-bottom: 1px solid #000000;
+  background-color: gray;
 }
 
 .map-button__plus {
   border-radius: 0 0 4px 4px;
   border-top: 1px solid #000000;
+  background-color: #ffffff;
 }
 
 .tooltip {
@@ -293,6 +308,7 @@ footer {
   height: 342px;
   width: 100%;
   position: absolute;
+  z-index: 2;
 }
 
 .footer__bg {
@@ -380,9 +396,7 @@ footer .footer__ul li {
 .logo-no-int {
   margin-right: 55px;
 }
-
-.map-button button:hover,
-a button:hover,
+button:hover,
 .ul__link img:hover,
 .logo:hover {
   cursor: pointer;
@@ -398,13 +412,174 @@ a button:hover,
 a:hover {
   text-shadow: #70cb0e 0px 0px 2px;
 }
-@media screen and (max-width: 1400px) {
-  .eagle {
-    padding-top: 392px;
-  }
-  .panda {
-    padding-top: 400px;
-  }
+.popup-bg {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+}
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 340px;
+  width: 630px;
+  z-index: 10;
+  background: white;
+  display: none;
+}
+.popup-content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.popup-first {
+  margin: 0 auto;
+  width: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popup-second {
+  margin-left: 76px;
+  width: 468px;
+  height: 390px;
+  display: none;
+}
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 27px;
+  width: 27px;
+  padding: 0;
+  background: url(../assets/popup-close.svg) no-repeat center;
+}
+.popup-animal {
+  margin-top: 60px;
+  width: 470px;
+  height: 39px;
+  text-align-last: center;
+  text-align: center;
+  -webkit-appearance: none;
+  background: url(../assets/select-arrow.svg) #dff5b0 no-repeat 98% 50%;
+  cursor: pointer;
+}
+.amount,
+.currency,
+.your-text {
+  margin-top: 8px;
+}
+.amount {
+  width: 303px;
+  height: 33px;
+}
+.currency {
+  height: 39px;
+  width: 151px;
+  margin-left: 8px;
+  text-align-last: center;
+  text-align: center;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.your-text {
+  width: 470px;
+  height: 85px;
+  resize: none;
+}
+.btn-submit,
+.btn-donate,
+.btn-next {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  height: 40px;
+}
+
+.popup-second input[type="number"]::-webkit-outer-spin-button,
+.popup-second input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.card-number {
+  margin-top: 85px;
+  height: 33px;
+  width: 298px;
+  text-align-last: center;
+  text-align: center;
+  margin-right: 198px;
+}
+.card-date {
+  margin-top: 8px;
+  height: 33px;
+  width: 72px;
+  text-align-last: center;
+  text-align: center;
+  margin-right: 5px;
+}
+.card-name {
+  margin-top: 8px;
+  height: 33px;
+  width: 298px;
+  text-align-last: center;
+  text-align: center;
+}
+.card-cvc {
+  position: relative;
+  bottom: 7px;
+  margin-left: 83px;
+  height: 29px;
+  width: 67px;
+  text-align-last: center;
+  text-align: center;
+}
+.btn-donate {
+  margin: 91px auto 0;
+}
+.popup-third form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popup-third {
+  margin: 0 auto;
+  width: 470px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.user-name {
+  margin-top: 50px;
+  height: 34px;
+  width: 470px;
+  background-color: #dff5b0;
+  border: 1px solid gray;
+}
+.user-email {
+  margin-top: 8px;
+  height: 34px;
+  width: 470px;
+  background-color: #dff5b0;
+  border: 1px solid gray;
+}
+.feedback-text {
+  margin-top: 8px;
+  width: 470px;
+  height: 180px;
+  resize: none;
+  background-color: #dff5b0;
+}
+.btn-submit {
+  background-color: gray;
 }
 @media screen and (max-width: 1160px) {
   header,
@@ -418,10 +593,6 @@ a:hover {
 
   footer {
     height: 432px;
-  }
-  .main-content {
-    height: 745px;
-    width: 100%;
   }
 
   .footer__bg {
@@ -474,49 +645,10 @@ a:hover {
 }
 
 @media screen and (max-width: 900px) {
-  .main-content {
-    background-position: top;
-    background-size: cover;
-    height: 600px;
-  }
   main {
     min-height: calc(100vh - 442px);
   }
-  .eagle {
-    padding-right: 40px;
-    padding-top: 307px;
-  }
 
-  .alligator {
-    padding-right: 5px;
-    padding-top: 313px;
-  }
-
-  .gorilla {
-    padding-right: 0px;
-    padding-top: 390px;
-  }
-
-  .panda {
-    padding-right: 70px;
-    padding-top: 306px;
-    width: 124px;
-  }
-
-  .usa {
-    padding-top: 297px;
-    padding-right: 55px;
-  }
-
-  .drc {
-    padding-right: 72px;
-    padding-top: 428px;
-  }
-
-  .china {
-    padding-right: 45px;
-    padding-top: 315px;
-  }
   .tooltip:hover .smal-tooltip {
     visibility: visible;
   }
@@ -542,12 +674,6 @@ a:hover {
   }
   .nav__header li {
     margin-right: 0;
-  }
-  .main-content {
-    background-position: top;
-    background-size: cover;
-    height: 600px;
-    justify-content: center;
   }
 }
 @media screen and (max-width: 580px) {

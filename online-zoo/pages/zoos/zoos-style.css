@@ -121,7 +121,7 @@ aside {
 }
 
 .aside-content {
-  margin-top: 13px;
+  padding-top: 13px;
   height: 352px;
   width: 104px;
   display: flex;
@@ -235,7 +235,18 @@ h2 {
   width: 275px;
   height: 155px;
 }
-
+.small-videos {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  margin: auto;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.small-videos::-webkit-scrollbar {
+  height: 0;
+}
 .content__text {
   margin-top: 30px;
   display: flex;
@@ -289,11 +300,16 @@ h2 {
   text-align: left;
   height: 102px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  transition-property: height;
+  transition-duration: 1s;
 }
 .details-all-text {
   height: 102px;
+  transition-property: height;
+  transition-duration: 1s;
+  overflow-y: hidden;
 }
 .details__text {
   margin-top: 7px;
@@ -302,12 +318,15 @@ h2 {
 }
 .summary__text {
   text-transform: uppercase;
+  cursor: pointer;
 }
 .details-arrow {
   width: 45px;
   height: 45px;
   background-image: url(../../assets/zoos-arow-close.svg);
-  margin-left: 15px;
+  transition-property: transform;
+  transition-duration: 1s;
+  cursor: pointer;
 }
 
 footer {
@@ -404,7 +423,7 @@ footer .footer__ul li {
 .logo-no-int {
   margin-right: 55px;
 }
-a button:hover,
+button:hover,
 .ul__link img:hover,
 .logo:hover {
   cursor: pointer;
@@ -425,7 +444,176 @@ a:hover {
   width: 300px;
   display: none;
 }
+.popup-bg {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+}
+.popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 340px;
+  width: 630px;
+  z-index: 10;
+  background: white;
+  display: none;
+}
+.popup-content {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.popup-first {
+  margin: 0 auto;
+  width: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popup-second {
+  margin-left: 76px;
+  width: 468px;
+  height: 390px;
+  display: none;
+}
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 27px;
+  width: 27px;
+  padding: 0;
+  background: url(../../assets/popup-close.svg) no-repeat center;
+}
+.popup-animal {
+  margin-top: 60px;
+  width: 470px;
+  padding: 0 200px;
+  height: 39px;
+  text-align-last: center;
+  text-align: center;
+  -webkit-appearance: none;
+  background: url(../assets/select-arrow.svg) #dff5b0 no-repeat 98% 50%;
+  cursor: pointer;
+}
+.amount,
+.currency,
+.your-text {
+  margin-top: 8px;
+}
+.amount {
+  width: 303px;
+  height: 33px;
+}
+.currency {
+  height: 39px;
+  width: 151px;
+  margin-left: 8px;
+  text-align-last: center;
+  text-align: center;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.your-text {
+  width: 470px;
+  height: 85px;
+  resize: none;
+}
+.btn-submit,
+.btn-donate,
+.btn-next {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  height: 40px;
+}
 
+.popup-second input[type="number"]::-webkit-outer-spin-button,
+.popup-second input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.card-number {
+  margin-top: 85px;
+  height: 33px;
+  width: 298px;
+  text-align-last: center;
+  text-align: center;
+  margin-right: 198px;
+}
+.card-date {
+  margin-top: 8px;
+  height: 33px;
+  width: 72px;
+  text-align-last: center;
+  text-align: center;
+  margin-right: 5px;
+}
+.card-name {
+  margin-top: 8px;
+  height: 33px;
+  width: 298px;
+  text-align-last: center;
+  text-align: center;
+}
+.card-cvc {
+  position: relative;
+  bottom: 7px;
+  margin-left: 83px;
+  height: 29px;
+  width: 67px;
+  text-align-last: center;
+  text-align: center;
+}
+.btn-donate {
+  margin: 91px auto 0;
+}
+.popup-third form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.popup-third {
+  margin: 0 auto;
+  width: 470px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.user-name {
+  margin-top: 50px;
+  height: 34px;
+  width: 470px;
+  background-color: #dff5b0;
+  border: 1px solid gray;
+}
+.user-email {
+  margin-top: 8px;
+  height: 34px;
+  width: 470px;
+  background-color: #dff5b0;
+  border: 1px solid gray;
+}
+.feedback-text {
+  margin-top: 8px;
+  width: 470px;
+  height: 180px;
+  resize: none;
+  background-color: #dff5b0;
+}
+.btn-submit {
+  background-color: gray;
+}
 @media screen and (max-width: 1589px) {
   .aside-open {
     display: none;
