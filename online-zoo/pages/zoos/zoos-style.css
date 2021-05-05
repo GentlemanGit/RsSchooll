@@ -495,7 +495,7 @@ a:hover {
   padding: 0;
   background: url(../../assets/popup-close.svg) no-repeat center;
 }
-.animal {
+.popup-animal {
   margin-top: 60px;
   width: 470px;
   padding: 0 200px;
