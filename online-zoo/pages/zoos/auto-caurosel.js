@@ -27,14 +27,15 @@ const delayAutoSliding = () => {
 
 videos.addEventListener("click", delayAutoSliding);
 videos.addEventListener("mouseover", delayAutoSliding);
-/*
-const allVidao = document.querySelectorAll(".vidaotwo");
-const allContener = document.querySelectorAll(".part-two__vidao");
 
-allContener.forEach((elem, index) => {
-  console.log(allVidao[index].src);
+const allVideos = document.querySelectorAll(".click-video");
+const smallVideos = document.querySelectorAll(".small-video");
+const mainVideo = document.querySelector(".main-video");
+allVideos.forEach((elem, index) => {
   elem.addEventListener("click", () => {
-    console.log(index);
+    let srcMainVideo = mainVideo.src;
+    let srcSmallVideo = smallVideos[index].src;
+    mainVideo.src = srcSmallVideo;
+    smallVideos[index].src = srcMainVideo;
   });
 });
-*/
