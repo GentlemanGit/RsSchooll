@@ -6,6 +6,7 @@ let zoomY = 0;
 let ZoomCounter = 0;
 
 allMap.onmousedown = function (event) {
+  btnCenter.style.backgroundColor = " #ffffff";
   let shiftX = event.clientX - allMap.getBoundingClientRect().left;
   let shiftY = event.clientY - allMap.getBoundingClientRect().top;
   if (ZoomCounter === 1) {
@@ -37,7 +38,7 @@ allMap.onmousedown = function (event) {
     moveAt(event.pageX, event.pageY);
   }
   document.addEventListener("mousemove", onMouseMove);
-  document.body.onmouseup = function () {
+  document.onmouseup = function () {
     document.removeEventListener("mousemove", onMouseMove);
     allMap.onmouseup = null;
   };
@@ -49,6 +50,7 @@ allMap.ondragstart = function () {
 /*Zoom*/
 const zoomOut = document.querySelector(".map-button__minus");
 const zoomIn = document.querySelector(".map-button__plus");
+const btnCenter = document.querySelector(".map-button__center");
 zoomIn.addEventListener("click", () => {
   if (zoom < 2) {
     ++ZoomCounter;
@@ -70,4 +72,11 @@ zoomOut.addEventListener("click", () => {
   else zoomOut.style.backgroundColor = " gray";
   if (zoom > 2) zoomIn.style.backgroundColor = " gray";
   else zoomIn.style.backgroundColor = " #ffffff";
+});
+
+btnCenter.addEventListener("click", () => {
+  let margLeft = (document.body.offsetWidth - allMap.offsetWidth) / 2;
+  allMap.style.top = "180px";
+  allMap.style.left = margLeft + "px";
+  btnCenter.style.backgroundColor = " gray";
 });

@@ -204,6 +204,13 @@ main {
   margin-bottom: 30px;
   z-index: 2;
 }
+.map-button__center {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: gray;
+  margin-bottom: 20px;
+}
 
 .map-button button {
   padding: 0;
