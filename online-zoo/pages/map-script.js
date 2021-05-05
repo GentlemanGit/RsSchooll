@@ -69,14 +69,18 @@ zoomOut.addEventListener("click", () => {
     allMap.style.transform = `scale(${zoom})`;
   }
   if (zoom != 1) zoomOut.style.backgroundColor = " #ffffff";
-  else zoomOut.style.backgroundColor = " gray";
+  else {
+    zoomOut.style.backgroundColor = " gray";
+    mapCenter();
+  }
   if (zoom > 2) zoomIn.style.backgroundColor = " gray";
   else zoomIn.style.backgroundColor = " #ffffff";
 });
 
-btnCenter.addEventListener("click", () => {
+btnCenter.addEventListener("click", mapCenter);
+function mapCenter() {
   let margLeft = (document.body.offsetWidth - allMap.offsetWidth) / 2;
   allMap.style.top = "180px";
   allMap.style.left = margLeft + "px";
   btnCenter.style.backgroundColor = " gray";
-});
+}
