@@ -25,10 +25,17 @@ function update(newActive) {
 }
 
 function getPos(current, active) {
-  const diff = current - active;
+  const addition = current - active;
 
   if (Math.abs(current - active) > 2) {
+    if (Number(current) < 0 && Number(active) === 2) {
+      return Number(current) + 3;
+    }
+
+    if (Number(current) > 0 && Number(active) === -2) {
+      return Number(current) - 3;
+    }
     return -current;
   }
-  return diff;
+  return addition;
 }
